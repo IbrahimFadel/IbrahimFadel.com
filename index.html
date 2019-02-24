@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ibrahim Fadel</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ibrahim Fadel">
+	<meta name="description" content="Ibrahim Fadel - My personal website">
+	<meta name="keywords" content="Ibrahim Fadel, Portfolio">
+
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div id="loading-bg">
+		<div id="loading-container">
+			<div id="loading">
+				<h1 id="loading-logo" class="fade">IF</h1>
+			</div>
+		</div>	
+
+		<header>
+			<nav id="navbar" style="opacity: 0">
+				<div id="logo">
+					<h5 id="logo-text">IF</h5>
+				</div>
+				<ul>
+					<li><a id="a-contact">Contact Me</a></li>
+					<li><a id="a-projects">Projects</a></li>
+					<li><a id="a-interests">Interests</a></li>
+					<li><a href="#about-div" id="a-about">About</a></li>
+					<li><a href="#home-div" id="a-home">Home</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="home-div" style="opacity: 0;">
+			<h3 id="home-hi">Hi There! My name is:</h3>
+			<h3 id="home-name"> Ibrahim Fadel</h3>
+			<h5 id="home-highschool">Highschool Student, Amateur Developer</h5>
+		</div>
+
+	</div>
+
+	<div id="band">
+	</div>
+
+	<div id="about-div">
+		<h1 style="text-align: center;">About Me</h1>
+		<hr style="width: 40%;">
+		<div id="about-text">
+			
+			<p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+
+			<p style="text-align: left;">Feel free to contact me <a href="#contact" style="text-decoration: underline; color: black;">here</a></p><br>
+
+			<p style="display: inline; float: left;">Or</p> <button class="button button-outline dark" style="display: inline; float: left;">Download My Resume</button>
+		</div>
+		<div id="about-img">
+			<img src="img/no-profile.png">
+		</div>
+
+		<h2 style="margin-top: 3%;">Interests</h2>
+		<hr style="width: 20%;">
+	</div>
+
+	<div id="projects-div">
+		<h1 style="text-align: center;">Projects</h1>
+		<hr style="width: 40%;">
+
+		<div class="project">
+			<img src="img/no-image.png">
+		</div>
+		<div class="project">
+			<img src="img/no-image.png">
+		</div>
+		<!-- <div class="experience inline">
+			<h2>WAC</h2>
+			<p style="margin-top: 15%;">
+				<img src="img/no-image.png" style="float: left; margin-top: -7%;">
+				Front End Developer for North America's largest student-run world affairs conference.
+			</p>
+		</div>
+		<div class="experience inline">
+			<h2>WAC</h2>
+			<p style="margin-top: 15%;">
+				<img src="img/no-image.png" style="float: left; margin-top: -7%;">
+				Front End Developer for North America's largest student-run world affairs conference.
+			</p>
+		</div> -->
+	</div>
+
+	<script>
+		window.setTimeout(function() {
+			var text = document.getElementById("loading-logo");
+			text.innerHTML = "Ibrahim Fadel";
+		}, 2500)
+		window.setTimeout(function() {
+			var div = document.getElementById("loading-container");
+			div.classList.add("fadeOut")
+		}, 3000)
+		window.setTimeout(function() {
+			var div = document.getElementById("loading");
+			div.parentNode.remove(div);
+			var nav = document.getElementById("navbar");
+			nav.style.opacity = 1;
+			var homeDiv = document.getElementById("home-div");
+			homeDiv.style.opacity = 1;
+		}, 5000)
+	</script>
+
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

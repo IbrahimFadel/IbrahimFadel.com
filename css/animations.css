@@ -1,0 +1,90 @@
+/*.fadeOut {
+	animation-name: fadeOut;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@-webkit-keyframes fadeOut {
+	
+}
+
+@-moz-keyframes fadeOut {
+	
+}
+
+@-o-keyframes fadeOut {
+	
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}*/
+
+.fade {
+	animation-name: fade;
+	animation-delay: 2s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+	0%, 100% {opacity: 1;}
+	50% {opacity: 0;}
+}
+
+@-webkit-keyframes fade {
+	0%, 100% {opacity: 1;}
+	50% {opacity: 0;}
+}
+
+@-o-keyframes fade {
+	0%, 100% {opacity: 1;}
+	50% {opacity: 0;}
+}
+
+@-moz-keyframes fade {
+	0%, 100% {opacity: 1;}
+	50% {opacity: 0;}
+}
+
+.fadeOut {
+	animation-name: fadeOut;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+/*.spin {
+	animation-name: spin;
+	animation-duration: 2s;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: center;
+	position: relative;
+	/*animation-fill-mode: forwards;*/
+}
+
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}*/
