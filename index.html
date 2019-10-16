@@ -1,121 +1,186 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Ibrahim Fadel</title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Ibrahim Fadel</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Ibrahim Fadel">
-	<meta name="description" content="Ibrahim Fadel - My personal website">
-	<meta name="keywords" content="Ibrahim Fadel, Portfolio">
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/keyframes.css" />
+		<link rel="stylesheet" href="css/anime.css" />
+		<link rel="stylesheet" href="css/quickAnims.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body class="fadeIn">
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="css/animations.css">
-	<link rel="stylesheet" type="text/css" href="css/buttons.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
-<body>
-	<div id="loading-bg">
-		<div id="loading-container">
-			<div id="loading">
-				<h1 id="loading-logo" class="fade">IF</h1>
-			</div>
-		</div>	
+		<noscript
+			>This website doesn't work properly without Javascript enabled!</noscript
+		>
 
 		<header>
-			<nav id="navbar" style="opacity: 0">
-				<div id="logo">
-					<h5 id="logo-text">IF</h5>
-				</div>
-				<ul>
-					<li><a id="a-contact">Contact Me</a></li>
-					<li><a id="a-projects">Projects</a></li>
-					<li><a id="a-interests">Interests</a></li>
-					<li><a href="#about-div" id="a-about">About</a></li>
-					<li><a href="#home-div" id="a-home">Home</a></li>
+			<nav id="nav" style="margin-bottom: 15vh;">
+				<h3 id="logo">Ibrahim Fadel</h3>
+				<ul class="nav-links">
+					<li>
+						<a class="active" id="home" href="#">Home</a>
+					</li>
+					<li><a id="about" href="#">About</a></li>
+					<li><a id="projects" href="#">Projects</a></li>
+					<li><a id="contact" href="#">Contact Me</a></li>
 				</ul>
+				<div id="burger" onclick="burgerClicked()">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
 			</nav>
 		</header>
-		<div id="home-div" style="opacity: 0;">
-			<h3 id="home-hi">Hi There! My name is:</h3>
-			<h3 id="home-name"> Ibrahim Fadel</h3>
-			<h5 id="home-highschool">Highschool Student, Amateur Developer</h5>
+
+		<div id="page1">
+			<section id="section-open">
+				<h1 id="hiThere-open" class="animateMe slideInDown">
+					Hi There! My name is:
+				</h1>
+				<h1 id="ibrahimFadel-open" class="animateMe slideInRight">
+					Ibrahim Fadel
+				</h1>
+				<h1 id="highdev-open" class="animateMe slideInUp">
+					Highschool Student, Amateur Developer
+				</h1>
+			</section>
 		</div>
 
-	</div>
+		<div id="page2">
+			<hr class="hr-text" data-content="About Me" id="hr1" />
 
-	<div id="band">
-	</div>
-
-	<div id="about-div">
-		<h1 style="text-align: center;">About Me</h1>
-		<hr style="width: 40%;">
-		<div id="about-text">
-			
-			<p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-
-			<p style="text-align: left;">Feel free to contact me <a href="#contact" style="text-decoration: underline; color: black;">here</a></p><br>
-
-			<p style="display: inline; float: left;">Or</p> <button class="button button-outline dark" style="display: inline; float: left;">Download My Resume</button>
+			<article id="about-article">
+				<p id="about-p">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+					recusandae corrupti odio eligendi deserunt, laboriosam fugiat
+					doloribus error libero repellendus itaque nobis quae magnam iure? Est
+					voluptatum nemo consequuntur dolorum.Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit. Obcaecati recusandae corrupti odio
+					eligendi deserunt, laboriosam fugiat doloribus error libero
+					repellendus itaque nobis quae magnam iure? Est voluptatum nemo
+					consequuntur dolorum.Lorem ipsum dolor sit amet, consectetur
+					adipisicing elit. Obcaecati recusandae corrupti odio eligendi
+					deserunt, laboriosam fugiat doloribus error libero repellendus itaque
+					nobis quae magnam iure? Est voluptatum nemo consequuntur dolorum.Lorem
+					ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+					recusandae corrupti odio eligendi deserunt, laboriosam fugiat
+					doloribus error libero repellendus itaque nobis quae magnam iure? Est
+					voluptatum nemo consequuntur dolorum.
+				</p>
+				<img
+					class="lazy"
+					src="img/lazy.png"
+					data-src="img/no-image.png"
+					data-srcset="img/no-image.png 2x, img/no-image.png 1x"
+					alt="I'm an image!"
+					id="about-img"
+				/>
+			</article>
 		</div>
-		<div id="about-img">
-			<img src="img/no-profile.png">
+
+		<div id="page3">
+			<!-- <hr class="hr-text" data-content="Interests" id="hr2" /> -->
+
+			<h1 class="center" id="interests-title">Interests</h1>
+
+			<section id="interests-section">
+				<div class="interest-container">
+					<h1>Fullstack Development</h1>
+					<p class="interest-p">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+						quasi corporis numquam expedita, reiciendis ipsam maxime fugit
+						optio, repellendus quo fuga. Officia qui, quod consequatur
+						recusandae sapiente perferendis sunt expedita!
+					</p>
+					<hr class="interest-hr"></hr>
+					<div class="interest-tags">
+						<div class="interest-tag">Node.js</div>
+						<div class="interest-tag">Firebase</div>
+						<div class="interest-tag">Vertx</div>
+						<div class="interest-tag">Sass/Scss</div>
+						<div class="interest-tag">React/React Native</div>
+						<div class="interest-tag">Unit Testing</div>
+					</div>
+				</div>
+				<div class="interest-container">
+					<h1>Game Development</h1>
+					<p class="interest-p">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+						quasi corporis numquam expedita, reiciendis ipsam maxime fugit
+						optio, repellendus quo fuga. Officia qui, quod consequatur
+						recusandae sapiente perferendis sunt expedita!
+					</p>
+					<hr class="interest-hr">
+					</hr>
+					<div class="interest-tags">
+						<div class="interest-tag">Phaser</div>
+						<div class="interest-tag">Unity</div>
+						<div class="interest-tag">Networking</div>
+					</div>
+				</div>
+				<div class="interest-container">
+					<h1>Hardware</h1>
+					<p class="interest-p">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+						quasi corporis numquam expedita, reiciendis ipsam maxime fugit
+						optio, repellendus quo fuga. Officia qui, quod consequatur
+						recusandae sapiente perferendis sunt expedita!
+					</p>
+					<hr class="interest-hr">
+					</hr>
+					<div class="interest-tags">
+						<span class="badge badge-pill badge-primary">Primary</span>
+						<div class="interest-tag">PC Builds</div>
+						<div class="interest-tag">Arduino/Rasberri Pi</div>
+						<div class="interest-tag">Networking</div>
+					</div>
+				</div>
+			</section>
 		</div>
 
-		<h2 style="margin-top: 3%;">Interests</h2>
-		<hr style="width: 20%;">
-	</div>
+		<div id="page4">
+			<h1 id="projects-title">Projects</h1>
+			<!-- <p class="center">Data is updated live from github</p> -->
 
-	<div id="projects-div">
-		<h1 style="text-align: center;">Projects</h1>
-		<hr style="width: 40%;">
+			<table id="projects-table" border="1" cellpadding="5px">
+				<!-- <th>
+					<td>Title</td>
+					<td>Description</td>
+					<td>Language</td>
+					<td>View</td>
+				</th> -->
+			</table>
 
-		<div class="project">
-			<img src="img/no-image.png">
+			<section id="projects-section">
+				<div class="project-container"></div>
+			</section>
 		</div>
-		<div class="project">
-			<img src="img/no-image.png">
-		</div>
-		<!-- <div class="experience inline">
-			<h2>WAC</h2>
-			<p style="margin-top: 15%;">
-				<img src="img/no-image.png" style="float: left; margin-top: -7%;">
-				Front End Developer for North America's largest student-run world affairs conference.
-			</p>
-		</div>
-		<div class="experience inline">
-			<h2>WAC</h2>
-			<p style="margin-top: 15%;">
-				<img src="img/no-image.png" style="float: left; margin-top: -7%;">
-				Front End Developer for North America's largest student-run world affairs conference.
-			</p>
-		</div> -->
-	</div>
 
-	<script>
-		window.setTimeout(function() {
-			var text = document.getElementById("loading-logo");
-			text.innerHTML = "Ibrahim Fadel";
-		}, 2500)
-		window.setTimeout(function() {
-			var div = document.getElementById("loading-container");
-			div.classList.add("fadeOut")
-		}, 3000)
-		window.setTimeout(function() {
-			var div = document.getElementById("loading");
-			div.parentNode.remove(div);
-			var nav = document.getElementById("navbar");
-			nav.style.opacity = 1;
-			var homeDiv = document.getElementById("home-div");
-			homeDiv.style.opacity = 1;
-		}, 5000)
-	</script>
-
-	
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-</body>
+		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/animations.js" async defer></script>
+		<script src="js/scroll.js" async defer></script>
+		<script src="js/lazy.js" async defer></script>
+		<script src="js/github.js" async defer></script>
+	</body>
 </html>

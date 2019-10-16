@@ -1,0 +1,23 @@
+@font-face {
+	font-family: GravityBook;
+	src: url("/fonts/Gravity-Book.otf");
+}
+
+@font-face {
+	font-family: GravityLight;
+	src: url("/fonts/Gravity-Light.otf");
+}
+
+h1,
+h2,
+h3 {
+	font-family: GravityBook;
+}
+
+h4,
+h5,
+p,
+a,
+div {
+	font-family: GravityLight;
+}

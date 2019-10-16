@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Ibrahim Fadel - AnimateMe</title>
+
+		<link rel="stylesheet" type="text/css" href="css/prettyprint.css" />
+		<link rel="stylesheet" type="text/css" href="css/quickAnims.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<h1 id="title">AnimateMe</h1>
+
+		<h1 class="subtitle">JS</h1>
+		<hr />
+		<br />
+
+		<div class="container">
+			<div class="content-square">
+				
+<pre class="prettyprint lang-js">
+/* A simple translateX */
+
+animateMe({
+	targets: ".targetElement #otherTarget",
+	animations: {
+		translateX: { value: "300px" },
+		skewX: { value: "30deg" } 
+	},
+	infinite: false,
+	delay: 1000,
+	duration: "2s",
+	easing: "linear"
+});
+ 
+/* Any property can be put in any order */
+</pre>
+			</div>
+			<div class="content-square"></div>
+			<div class="content-square"></div>
+			<div class="content-square"></div>
+		</div>
+
+		<h1 class="subtitle">CSS</h1>
+		<hr />
+		<br />
+
+		<div class="container">
+			<div class="content-square"></div>
+			<div class="content-square"></div>
+			<div class="content-square"></div>
+			<div class="content-square"></div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	</body>
+</html>
