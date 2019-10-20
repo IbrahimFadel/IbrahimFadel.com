@@ -65,6 +65,11 @@ function scrolled() {
 		);
 	}
 	///////////////////////////////////////////////////////////
+	if (window.scrollY < 1100) {
+		document.getElementById("small-projects-underline").style.width = String(
+			window.scrollY / 1.5
+		);
+	}
 }
 
 function startFadeInTimeouts() {
