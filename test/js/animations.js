@@ -58,7 +58,7 @@ function scrolled() {
 			5 - window.scrollY / 250
 		);
 	}
-
+	// test
 	if (window.scrollY < 2000) {
 		document.getElementById("small-project-1").style.opacity = String(
 			window.scrollY / 250 - 5
