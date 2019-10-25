@@ -76,10 +76,10 @@ function scrolled() {
 	}
 	if (window.scrollY < 2500) {
 		document.getElementById("small-project-3").style.opacity = String(
-			window.scrollY / 250 - 6
+			window.scrollY / 250 - 7
 		);
 		document.getElementById("small-project-4").style.opacity = String(
-			window.scrollY / 250 - 6
+			window.scrollY / 250 - 7
 		);
 	} else {
 		document.getElementById("small-project-3").style.opacity = String(
@@ -89,12 +89,12 @@ function scrolled() {
 			8 - window.scrollY / 250
 		);
 	}
-	if (window.scrollY < 3100) {
+	if (window.scrollY < 3200) {
 		document.getElementById("small-project-5").style.opacity = String(
-			window.scrollY / 250 - 7
+			window.scrollY / 250 - 9
 		);
 		document.getElementById("small-project-6").style.opacity = String(
-			window.scrollY / 250 - 7
+			window.scrollY / 250 - 9
 		);
 	} else {
 		document.getElementById("small-project-5").style.opacity = String(
