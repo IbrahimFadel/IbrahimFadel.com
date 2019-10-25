@@ -39,7 +39,7 @@ function scrolled() {
 			window.scrollY / 250 - 2
 		);
 		document.getElementById("about-me-text2").style.opacity = String(
-			window.scrollY / 250 - 2.5
+			window.scrollY / 250 - 2.2
 		);
 		document.getElementById("about-me-underline").style.opacity = String(
 			window.scrollY / 250 - 1
@@ -59,15 +59,61 @@ function scrolled() {
 		);
 	}
 
+	if (window.scrollY < 2000) {
+		document.getElementById("small-project-1").style.opacity = String(
+			window.scrollY / 250 - 5
+		);
+		document.getElementById("small-project-2").style.opacity = String(
+			window.scrollY / 250 - 5
+		);
+	} else {
+		document.getElementById("small-project-1").style.opacity = String(
+			7 - window.scrollY / 250
+		);
+		document.getElementById("small-project-2").style.opacity = String(
+			7 - window.scrollY / 250
+		);
+	}
+	if (window.scrollY < 2500) {
+		document.getElementById("small-project-3").style.opacity = String(
+			window.scrollY / 250 - 6
+		);
+		document.getElementById("small-project-4").style.opacity = String(
+			window.scrollY / 250 - 6
+		);
+	} else {
+		document.getElementById("small-project-3").style.opacity = String(
+			8 - window.scrollY / 250
+		);
+		document.getElementById("small-project-4").style.opacity = String(
+			8 - window.scrollY / 250
+		);
+	}
+	if (window.scrollY < 3100) {
+		document.getElementById("small-project-5").style.opacity = String(
+			window.scrollY / 250 - 7
+		);
+		document.getElementById("small-project-6").style.opacity = String(
+			window.scrollY / 250 - 7
+		);
+	} else {
+		document.getElementById("small-project-5").style.opacity = String(
+			9 - window.scrollY / 250
+		);
+		document.getElementById("small-project-6").style.opacity = String(
+			9 - window.scrollY / 250
+		);
+	}
+
 	if (window.scrollY < 750) {
 		document.getElementById("about-me-underline").style.width = String(
 			window.scrollY / 5
 		);
 	}
 	///////////////////////////////////////////////////////////
-	if (window.scrollY < 1100) {
+	if (window.scrollY < 1450) {
 		document.getElementById("small-projects-underline").style.width = String(
-			window.scrollY / 1.5
+			window.scrollY / 2
 		);
 	}
 }

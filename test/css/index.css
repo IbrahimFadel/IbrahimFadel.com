@@ -51,14 +51,14 @@ body {
 #about-me-container {
 	background-color: #23272a;
 	width: 100%;
-	height: 60%;
+	height: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-direction: column;
 	align-items: center;
 	/* row-gap: 5vh; */
-	padding-top: 20vh;
-	padding-bottom: 20vh;
+	/* padding-top: 20vh; */
+	/* padding-bottom: 20vh; */
 }
 
 #about-me {
@@ -80,7 +80,7 @@ body {
 
 #small-projects-container {
 	width: 100%;
-	height: 250%;
+	height: 270%;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
@@ -107,14 +107,14 @@ body {
 	flex-direction: row;
 	align-items: center;
 	width: 100%;
-	height: 70%;
+	height: 90%;
 	flex-wrap: wrap;
-	row-gap: 10vh;
+	row-gap: 5vh;
 }
 
 .small-project {
 	width: 40%;
-	height: 40%;
+	height: 30%;
 	background-color: #23272a;
 	border-radius: 5px;
 	display: flex;
@@ -122,6 +122,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	transition: opacity 0.6s ease;
 }
 
 .small-project-img {
@@ -150,4 +151,10 @@ body {
 .small-project-text {
 	width: 90%;
 	margin-bottom: 0;
+}
+
+#bigger-projects-container {
+	width: 100%;
+	height: 100%;
+	background-color: #23272a;
 }

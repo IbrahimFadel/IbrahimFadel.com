@@ -48,20 +48,19 @@
 				<small>(small)</small> library!
 			</p>
 		</div>
-
+		<!-- <div class="alert alert-warning" role="alert" id="warning">
+						Warning to people who love good browsing experiences! All links on this
+						website open to NEW tabs!
+						<i class="fas fa-times-circle" onclick="closeAlert()"></i>
+					</div> -->
 		<div id="small-projects-container">
-			<div class="alert alert-warning" role="alert" id="warning">
-				Warning to people who love good browsing experiences! All links on this
-				website open to NEW tabs!
-				<i class="fas fa-times-circle" onclick="closeAlert()"></i>
-			</div>
 			<div id="small-projects-title-container">
 				<h1 id="small-projects-title">Some of my more fun/smaller projects!</h1>
 				<div id="small-projects-underline"></div>
 			</div>
 
 			<div id="small-projects">
-				<div class="small-project">
+				<div class="small-project" id="small-project-1" style="opacity: 0;">
 					<img src="assets/img/animateMe.gif" class="small-project-img" />
 					<a
 						href="https://github.com/IbrahimFadel/animateMe"
@@ -87,7 +86,7 @@
 						transformations to them(with delay, duration, and easing)
 					</p>
 				</div>
-				<div class="small-project">
+				<div class="small-project" id="small-project-2" style="opacity: 0;">
 					<img src="assets/img/rorke.jpg" class="small-project-img" />
 					<a
 						href="https://github.com/IbrahimFadel/rorke"
@@ -109,11 +108,11 @@
 						reached its full potential :(
 					</p>
 				</div>
-				<div class="small-project">
+				<div class="small-project" id="small-project-3" style="opacity: 0;">
 					<img />
 					<h1 class="small-project-title">Interchange-Tunes</h1>
 				</div>
-				<div class="small-project">
+				<div class="small-project" id="small-project-4" style="opacity: 0;">
 					<img src="assets/img/apocalypse.png" class="small-project-img" />
 					<h1 class="small-project-title">Apocalypse</h1>
 					<div class="small-project-icons">
@@ -128,11 +127,11 @@
 						and ammo. Not too shabby.
 					</p>
 				</div>
-				<div class="small-project">
+				<div class="small-project" id="small-project-5" style="opacity: 0;">
 					<img />
 					<h1 class="small-project-title">Mysync</h1>
 				</div>
-				<div class="small-project">
+				<div class="small-project" id="small-project-6" style="opacity: 0;">
 					<img src="assets/img/battlesim.gif" class="small-project-img" />
 					<h1 class="small-project-title">Battle Simulator</h1>
 					<div class="small-project-icons">
@@ -149,6 +148,8 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="bigger-projects-container"></div>
 
 		<script defer src="js/animateme.js"></script>
 		<script defer src="js/index.js"></script>

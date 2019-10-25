@@ -1,11 +1,11 @@
 @font-face {
 	font-family: GravityBook;
-	src: url("../../fonts/Gravity-Book.otf");
+	src: url("../assets/fonts/Gravity-Book.otf");
 }
 
 @font-face {
 	font-family: GravityLight;
-	src: url("../../fonts/Gravity-Light.otf");
+	src: url("../assets/fonts/Gravity-Light.otf");
 }
 
 h1,
