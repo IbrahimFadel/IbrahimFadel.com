@@ -223,6 +223,37 @@
 				</div>
 			</div>
 		</div>
+		<div id="contact-me-container">
+			<h1 id="contact-me-title">Contact Me</h1>
+			<div id="contact-me-methods-container">
+				<div id="contact-me-methods-alerts">
+					<a class="link" href="https://github.com/IbrahimFadel" target="_blank"
+						><div class="alert alert-danger contact-alert" role="alert">
+							Github: IbrahimFadel
+						</div></a
+					>
+					<a
+						><div class="alert alert-primary contact-alert" role="alert">
+							Email: ibrahim.fadel@ucc.on.ca
+						</div>
+					</a>
+					<a
+						><div class="alert alert-success contact-alert" role="alert">
+							Phone: 416-709-5855
+						</div></a
+					>
+				</div>
+				<!-- <div id="contact-me-methods-form"> -->
+				<form id="contact-me-methods-form" action="/sendMessage" method="POST">
+					<h3>Send me an email</h3>
+					<input name="from" type="text" placeholder="youremail@gmail.com" />
+					<input name="subject" type="text" placeholder="subject" />
+					<textarea name="body" placeholder="body"></textarea>
+					<button type="submit">Send</button>
+				</form>
+				<!-- </div> -->
+			</div>
+		</div>
 		<script defer src="js/animateme.js"></script>
 		<script defer src="js/index.js"></script>
 		<script defer src="js/animations.js"></script>
