@@ -1,179 +1,209 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-	<!--<![endif]-->
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Ibrahim Fadel</title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<link rel="stylesheet" href="css/fonts.css" />
-		<link rel="stylesheet" href="css/keyframes.css" />
-		<link rel="stylesheet" href="css/anime.css" />
-		<link rel="stylesheet" href="css/quickAnims.min.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/index.css" />
+		<meta charset="UTF-8" />
+		<meta name="description" content="My personal website/portfolio" />
+		<meta name="keywords" content="Ibrahim, Fadel, Programming, Code" />
+		<meta name="author" content="Ibrahim Fadel" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/animateme.css" />
+		<script
+			src="https://kit.fontawesome.com/bb13721306.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
-	<body class="fadeIn">
-		<noscript
-			>This website doesn't work properly without Javascript enabled!</noscript
-		>
-
-		<header>
-			<nav id="nav" style="margin-bottom: 15vh;">
-				<h3 id="logo">Ibrahim Fadel</h3>
-				<ul class="nav-links">
-					<li>
-						<a class="active" id="home" href="#">Home</a>
-					</li>
-					<li><a id="about" href="#">About</a></li>
-					<li><a id="projects" href="#">Projects</a></li>
-					<li><a id="contact" href="#">Contact Me</a></li>
-				</ul>
-				<div id="burger" onclick="burgerClicked()">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
-			</nav>
-		</header>
-
-		<div id="page1">
-			<section id="section-open">
-				<h1 id="hiThere-open" class="animateMe slideInDown">
-					Hi There! My name is:
-				</h1>
-				<h1 id="ibrahimFadel-open" class="animateMe slideInRight">
-					Ibrahim Fadel
-				</h1>
-				<h1 id="highdev-open" class="animateMe slideInUp">
-					Highschool Student, Amateur Developer
-				</h1>
-			</section>
+	<body>
+		<div id="hi-there-container">
+			<h1 id="hi-there" style="opacity: 0;">Hi there! My name is:</h1>
+			<h2 id="ibrahim-fadel" style="opacity: 0;">Ibrahim Fadel</h2>
+			<h2 id="highschool-amateur" style="opacity: 0;">
+				Highschool Student, Amateur Developer
+			</h2>
 		</div>
-
-		<div id="page2">
-			<hr class="hr-text" data-content="About Me" id="hr1" />
-
-			<article id="about-article">
-				<p id="about-p">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-					recusandae corrupti odio eligendi deserunt, laboriosam fugiat
-					doloribus error libero repellendus itaque nobis quae magnam iure? Est
-					voluptatum nemo consequuntur dolorum.Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit. Obcaecati recusandae corrupti odio
-					eligendi deserunt, laboriosam fugiat doloribus error libero
-					repellendus itaque nobis quae magnam iure? Est voluptatum nemo
-					consequuntur dolorum.Lorem ipsum dolor sit amet, consectetur
-					adipisicing elit. Obcaecati recusandae corrupti odio eligendi
-					deserunt, laboriosam fugiat doloribus error libero repellendus itaque
-					nobis quae magnam iure? Est voluptatum nemo consequuntur dolorum.Lorem
-					ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-					recusandae corrupti odio eligendi deserunt, laboriosam fugiat
-					doloribus error libero repellendus itaque nobis quae magnam iure? Est
-					voluptatum nemo consequuntur dolorum.
-				</p>
-				<img
-					class="lazy"
-					src="img/lazy.png"
-					data-src="img/no-image.png"
-					data-srcset="img/no-image.png 2x, img/no-image.png 1x"
-					alt="I'm an image!"
-					id="about-img"
-				/>
-			</article>
+		<div id="about-me-container">
+			<div id="about-me-title-container">
+				<h1 id="about-me" style="opacity: 0;">About me</h1>
+				<div id="about-me-underline" style="opacity: 0;"></div>
+			</div>
+			<p id="about-me-text1">
+				I like to work on a lot of different things. I started out coding
+				bymaking <small>(little)</small> games with<a
+					href="https://phaser.io"
+					target="_blank"
+					class="link"
+					>phaserJS</a
+				>. Ialso started making websites and learning all about html/css + js
+			</p>
+			<p id="about-me-text2">
+				Now, I like to make webapps with reactjs, fun personal projects, and
+				theoccasional<small>(small)</small> library!
+			</p>
 		</div>
-
-		<div id="page3">
-			<!-- <hr class="hr-text" data-content="Interests" id="hr2" /> -->
-
-			<h1 class="center" id="interests-title">Interests</h1>
-
-			<section id="interests-section">
-				<div class="interest-container">
-					<h1>Fullstack Development</h1>
-					<p class="interest-p">
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-						quasi corporis numquam expedita, reiciendis ipsam maxime fugit
-						optio, repellendus quo fuga. Officia qui, quod consequatur
-						recusandae sapiente perferendis sunt expedita!
-					</p>
-					<hr class="interest-hr"></hr>
-					<div class="interest-tags">
-						<div class="interest-tag">Node.js</div>
-						<div class="interest-tag">Firebase</div>
-						<div class="interest-tag">Vertx</div>
-						<div class="interest-tag">Sass/Scss</div>
-						<div class="interest-tag">React/React Native</div>
-						<div class="interest-tag">Unit Testing</div>
+		<!-- <div class="alert alert-warning" role="alert" id="warning">Warning to people who love good browsing experiences! All links on thiswebsite open to NEW tabs!<i class="fas fa-times-circle" onclick="closeAlert()"></i></div> -->
+		<div id="small-projects-container">
+			<div id="small-projects-title-container">
+				<h1 id="small-projects-title">Some of my more fun/smaller projects!</h1>
+				<div id="small-projects-underline"></div>
+			</div>
+			<div id="small-projects">
+				<div class="small-project" id="small-project-1" style="opacity: 0;">
+					<img src="assets/img/animateMe.gif" class="small-project-img" />
+					<a
+						href="https://github.com/IbrahimFadel/animateMe"
+						target="_blank"
+						class="link"
+					>
+						<h1 class="small-project-title">AnimateMe</h1></a
+					>
+					<div class="small-project-icons">
+						<i class="fab fa-css3 small-project-icon"></i
+						><i class="fab fa-js small-project-icon"></i>
 					</div>
-				</div>
-				<div class="interest-container">
-					<h1>Game Development</h1>
-					<p class="interest-p">
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-						quasi corporis numquam expedita, reiciendis ipsam maxime fugit
-						optio, repellendus quo fuga. Officia qui, quod consequatur
-						recusandae sapiente perferendis sunt expedita!
+					<p class="small-project-text">
+						AnimateMe started off as my attempt at a clone of
+						<a
+							href="https://daneden.github.io/animate.css/"
+							target="_blank"
+							class="link"
+							>Animate.css </a
+						>. I learnt about css transformations and transitions buteventually,
+						I decided to add a js portion. This added a functionthat could
+						target elements w/ ids or classes and applytransformations to
+						them(with delay, duration, and easing)
 					</p>
-					<hr class="interest-hr">
-					</hr>
-					<div class="interest-tags">
-						<div class="interest-tag">Phaser</div>
-						<div class="interest-tag">Unity</div>
-						<div class="interest-tag">Networking</div>
-					</div>
 				</div>
-				<div class="interest-container">
-					<h1>Hardware</h1>
-					<p class="interest-p">
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-						quasi corporis numquam expedita, reiciendis ipsam maxime fugit
-						optio, repellendus quo fuga. Officia qui, quod consequatur
-						recusandae sapiente perferendis sunt expedita!
+				<div class="small-project" id="small-project-2" style="opacity: 0;">
+					<img src="assets/img/rorke.jpg" class="small-project-img" />
+					<a
+						href="https://github.com/IbrahimFadel/rorke"
+						target="_blank"
+						class="link"
+					>
+						<h1 class="small-project-title">Rorke</h1></a
+					>
+					<div class="small-project-icons">
+						<i class="fas fa-gamepad small-project-icon"></i
+						><i class="fab fa-js small-project-icon"></i>
+					</div>
+					<p class="small-project-text">
+						Rorke is a small game framework I made(maybe will continuedeveloping
+						later). I made it with<a
+							href="http://pixijs.com"
+							target="_blank"
+							class="link"
+							>pixiJS</a
+						>and LOT'S and LOT'S of rewrites. I'm pretty proud of it, and you
+						canmake some interesting things with it, but I never felt like
+						itreached its full potential :(
 					</p>
-					<hr class="interest-hr">
-					</hr>
-					<div class="interest-tags">
-						<span class="badge badge-pill badge-primary">Primary</span>
-						<div class="interest-tag">PC Builds</div>
-						<div class="interest-tag">Arduino/Rasberri Pi</div>
-						<div class="interest-tag">Networking</div>
-					</div>
 				</div>
-			</section>
+				<div class="small-project" id="small-project-3" style="opacity: 0;">
+					<img />
+					<h1 class="small-project-title">Interchange-Tunes</h1>
+				</div>
+				<div class="small-project" id="small-project-4" style="opacity: 0;">
+					<img src="assets/img/apocalypse.png" class="small-project-img" />
+					<h1 class="small-project-title">Apocalypse</h1>
+					<div class="small-project-icons">
+						<i class="fas fa-gamepad small-project-icon"></i
+						><i class="fab fa-js small-project-icon"></i>
+					</div>
+					<p class="small-project-text">
+						Apocalypse was a game I made with<a
+							href="http://phaser.io"
+							target="_blank"
+							class="link"
+							>phaserJS</a
+						>. I really tried to commit to finishing it, and I got pretty
+						far.There's an inventory, two weapons, infinite enemy spawning,
+						loot,and ammo. Not too shabby.
+					</p>
+				</div>
+				<div class="small-project" id="small-project-5" style="opacity: 0;">
+					<img />
+					<h1 class="small-project-title">Mysync</h1>
+				</div>
+				<div class="small-project" id="small-project-6" style="opacity: 0;">
+					<img src="assets/img/battlesim.gif" class="small-project-img" />
+					<h1 class="small-project-title">Battle Simulator</h1>
+					<div class="small-project-icons">
+						<i class="fas fa-gamepad small-project-icon"></i
+						><i class="fab fa-js small-project-icon"></i>
+					</div>
+					<p class="small-project-text">
+						This battle simulator was my first real project. I used
+						typescriptand<a href="http://phaser.io" target="_blank" class="link"
+							>phaserJS</a
+						>. As you can see it's pretty unpolished, but it's still pretty
+						funto play around with(Pink team is OP)
+					</p>
+				</div>
+			</div>
 		</div>
-
-		<div id="page4">
-			<h1 id="projects-title">Projects</h1>
-			<!-- <p class="center">Data is updated live from github</p> -->
-
-			<table id="projects-table" border="1" cellpadding="5px">
-				<!-- <th>
-					<td>Title</td>
-					<td>Description</td>
-					<td>Language</td>
-					<td>View</td>
-				</th> -->
-			</table>
-
-			<section id="projects-section">
-				<div class="project-container"></div>
-			</section>
+		<div id="bigger-projects-container">
+			<div id="bigger-projects-title-container">
+				<h1 id="bigger-projects-title">Bigger Projects</h1>
+				<div id="bigger-projects-title-underline"></div>
+			</div>
+			<div id="bigger-projects">
+				<div class="bigger-project">
+					<img src="assets/img/wac.png" class="bigger-project-image" />
+					<h1 class="bigger-project-title">World Affairs Conference</h1>
+					<div class="bigger-project-icons-container">
+						<i class="fab fa-html5 bigger-project-icon"></i>
+						<i class="fab fa-css3 bigger-project-icon"></i>
+					</div>
+					<p class="bigger-project-text">
+						The
+						<a
+							class="link"
+							href="http://worldaffairs.ucc.on.ca/"
+							target="_blank"
+							>World Affairs Conference</a
+						>
+						is the North America's largest annual student-run current
+						affairsconference. It is held at Upper Canada College where I attend
+						highschool. I've been on their web development team since grade 9,
+						working on their front end, updating it for each year.
+					</p>
+				</div>
+				<div class="bigger-project">
+					<img src="assets/img/amnesty.jpg" class="bigger-project-image" />
+					<h1 class="bigger-project-title">Amnesty UCC</h1>
+					<div class="alert alert-danger still-in-dev" role="alert">
+						Still in Development
+						<!-- <i class="fas fa-times-circle" onclick="closeAlert()"></i> -->
+					</div>
+					<div class="bigger-project-icons-container">
+						<i class="fab fa-react bigger-project-icon"></i>
+						<i class="fas fa-server bigger-project-icon"></i>
+					</div>
+					<p>
+						The
+						<a class="link" href="http://amnestyucc.com" target="_blank"
+							>Amnesty International</a
+						>club at my high school, Upper Canada College, writes articles,
+						holdsyearly events and tries to educate the school about
+						humanitarianissues. In the 2018/2019 school year I started work on
+						theirwebsite. It's built with
+						<a class="link" href="https://reactjs.org/" target="_blank"
+							>reactjs</a
+						>
+						and it uses
+						<a class="link" href="https://firebase.google.com/" target="_blank"
+							>firebase</a
+						>
+						for the backend. This year i'm writing articles so be sure to
+						checkout the website to read up!
+					</p>
+				</div>
+			</div>
 		</div>
-
-		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
-		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="js/animations.js" async defer></script>
-		<script src="js/scroll.js" async defer></script>
-		<script src="js/lazy.js" async defer></script>
-		<script src="js/github.js" async defer></script>
+		<script defer src="js/animateme.js"></script>
+		<script defer src="js/index.js"></script>
+		<script defer src="js/animations.js"></script>
 	</body>
 </html>

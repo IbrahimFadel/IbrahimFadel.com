@@ -1,17 +1,18 @@
 @font-face {
 	font-family: GravityBook;
-	src: url("/fonts/Gravity-Book.otf");
+	src: url("../assets/fonts/Gravity-Book.otf");
 }
 
 @font-face {
 	font-family: GravityLight;
-	src: url("/fonts/Gravity-Light.otf");
+	src: url("../assets/fonts/Gravity-Light.otf");
 }
 
 h1,
 h2,
 h3 {
 	font-family: GravityBook;
+	font-weight: 100;
 }
 
 h4,
@@ -20,4 +21,5 @@ p,
 a,
 div {
 	font-family: GravityLight;
+	font-weight: 100;
 }
