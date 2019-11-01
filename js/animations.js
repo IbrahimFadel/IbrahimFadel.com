@@ -116,6 +116,12 @@ function scrolled() {
 			window.scrollY / 2
 		);
 	}
+
+	if (window.scrollY > 2900 && window.scrollY < 3400) {
+		document.getElementById(
+			"bigger-projects-title-underline"
+		).style.width = String(window.scrollY / 10);
+	}
 }
 
 function startFadeInTimeouts() {
