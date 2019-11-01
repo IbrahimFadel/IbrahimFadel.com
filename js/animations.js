@@ -41,9 +41,14 @@ function scrolled() {
 		document.getElementById("about-me-text2").style.opacity = String(
 			window.scrollY / 250 - 2.2
 		);
-		document.getElementById("about-me-underline").style.opacity = String(
-			window.scrollY / 250 - 1
-		);
+
+		if (window.innerWidth > 700) {
+			document.getElementById("about-me-underline").style.opacity = String(
+				window.scrollY / 250 - 1
+			);
+		} else {
+			document.getElementById("about-me-underline").style.opacity = "1";
+		}
 	} else {
 		document.getElementById("about-me").style.opacity = String(
 			5 - window.scrollY / 250
@@ -54,9 +59,11 @@ function scrolled() {
 		document.getElementById("about-me-text2").style.opacity = String(
 			5 - window.scrollY / 250
 		);
-		document.getElementById("about-me-underline").style.opacity = String(
-			5 - window.scrollY / 250
-		);
+		if (window.innerWidth > 700) {
+			document.getElementById("about-me-underline").style.opacity = String(
+				5 - window.scrollY / 250
+			);
+		}
 	}
 	// test
 	if (window.scrollY < 2000) {
@@ -106,21 +113,35 @@ function scrolled() {
 	}
 
 	if (window.scrollY < 750) {
-		document.getElementById("about-me-underline").style.width = String(
-			window.scrollY / 5
-		);
+		if (window.innerWidth > 700) {
+			document.getElementById("about-me-underline").style.width = String(
+				window.scrollY / 5
+			);
+		} else {
+			document.getElementById("about-me-underline").style.display = "none";
+		}
 	}
 	///////////////////////////////////////////////////////////
 	if (window.scrollY < 1450) {
-		document.getElementById("small-projects-underline").style.width = String(
-			window.scrollY / 2
-		);
+		if (window.innerWidth > 700) {
+			document.getElementById("small-projects-underline").style.width = String(
+				window.scrollY / 2
+			);
+		} else {
+			document.getElementById("small-projects-underline").style.display =
+				"none";
+		}
 	}
 
 	if (window.scrollY > 2900 && window.scrollY < 3400) {
-		document.getElementById(
-			"bigger-projects-title-underline"
-		).style.width = String(window.scrollY / 10);
+		if (window.innerWidth > 700) {
+			document.getElementById(
+				"bigger-projects-title-underline"
+			).style.width = String(window.scrollY / 10);
+		} else {
+			document.getElementById("bigger-projects-title-underline").style.display =
+				"none";
+		}
 	}
 }
 
