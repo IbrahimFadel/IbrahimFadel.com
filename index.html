@@ -1,262 +1,224 @@
 <html>
 	<head>
 		<title>Ibrahim Fadel</title>
-		<meta charset="UTF-8" />
+
+		<meta charset="utf-8" />
 		<meta name="description" content="My personal website/portfolio" />
 		<meta name="keywords" content="Ibrahim, Fadel, Programming, Code" />
 		<meta name="author" content="Ibrahim Fadel" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" type="text/css" href="css/media.css" />
-		<link rel="stylesheet" type="text/css" href="css/animateme.css" />
-		<script
-			src="https://kit.fontawesome.com/bb13721306.js"
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 			crossorigin="anonymous"
-		></script>
+		/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 
 	<body>
-		<div id="hi-there-container">
-			<h1 id="hi-there" style="opacity: 0;">Hi there! My name is:</h1>
-			<h2 id="ibrahim-fadel" style="opacity: 0;">Ibrahim Fadel</h2>
-			<h2 id="highschool-amateur" style="opacity: 0;">
-				Highschool Student, Amateur Developer
-			</h2>
-		</div>
-		<div id="about-me-container">
-			<div id="about-me-title-container">
-				<h1 id="about-me" style="opacity: 0;">About me</h1>
-				<div id="about-me-underline" style="opacity: 0;"></div>
+		<section id="section-1" class="vertical">
+			<div class="vertical">
+				<h1 id="name">Ibrahim Fadel</h1>
+				<div id="name-underline"></div>
 			</div>
-			<p id="about-me-text1">
-				I like to work on a lot of different things. I started out coding by
-				making <small>(little)</small> games with
-				<a href="https://phaser.io" target="_blank" class="link">phaserJS</a>. I
-				also started making websites and learning all about html/css + js
-			</p>
-			<p id="about-me-text2">
-				Now, I like to make webapps with reactjs, fun personal projects, and the
-				occasional <small>(small)</small> library!
-			</p>
-		</div>
-		<!-- <div class="alert alert-warning" role="alert" id="warning">Warning to people who love good browsing experiences! All links on thiswebsite open to NEW tabs!<i class="fas fa-times-circle" onclick="closeAlert()"></i></div> -->
-		<div id="small-projects-container">
-			<div id="small-projects-title-container">
-				<h1 id="small-projects-title">Some of my more fun/smaller projects!</h1>
-				<div id="small-projects-underline"></div>
+
+			<div id="section-1-footer" class="horizontal">
+				<a href="#section-2">About</a>
+				<p style="margin-left: 10px; margin-right: 10px;">/</p>
+				<a href="#section-3">Projects</a>
+				<p style="margin-left: 10px; margin-right: 10px;">/</p>
+				<a href="#section-6">Work</a>
+				<p style="margin-left: 10px; margin-right: 10px;">/</p>
+				<a href="#section-7">Contact</a>
 			</div>
-			<div id="small-projects">
-				<div class="small-project" id="small-project-1" style="opacity: 0;">
-					<img src="assets/img/animateMe.gif" class="small-project-img" />
-					<a
-						href="https://github.com/IbrahimFadel/animateMe"
-						target="_blank"
-						class="link"
+		</section>
+
+		<section id="section-2" class="horizontal">
+			<div id="section-2-left" class="vertical">
+				<h1>About</h1>
+			</div>
+			<div id="section-2-right" class="vertical">
+				<p>
+					I'm currently starting my junior year of highschool in Toronto,
+					Ontario!
+				</p>
+				<p>I like trying to make cool things with code</p>
+				<p>
+					Unfortunately, I'm quite 'creatively challenged' so I tend to stick to
+					less visual projects
+				</p>
+				<p>
+					Most of my projects go unfinished (48 github repos) -- usually because
+					I've thought of something "more interesting" to do. Although, a few
+					are done enough to show here!
+					<br />
+					<br />
+					See
+					<a href="#section-3" id="below-link" style="text-decoration: none;"
+						>below</a
 					>
-						<h1 class="small-project-title">AnimateMe</h1>
-					</a>
-					<div class="small-project-icons">
-						<i class="fab fa-css3 small-project-icon"></i
-						><i class="fab fa-js small-project-icon"></i>
+					:)
+				</p>
+			</div>
+		</section>
+
+		<div class="triangle"></div>
+
+		<section id="section-3" class="horizontal">
+			<div id="section-3-left" class="vertical">
+				<img src="assets/videos/sirc.gif" class="project-image" />
+				<p style="font-size: 0.5em;">
+					Some sample usage of the IRC client
+				</p>
+			</div>
+			<div id="section-3-right" class="vertical">
+				<h1>SIRC</h1>
+				<p>Simple IRC is a tiny IRC client I made with Typescript</p>
+
+				<p>
+					SIRC connects you to IRC servers, and allows very simple IRC
+					functionality. I did some very basic IRC message parsing with regex.
+					With that, you can join channels, which between multiple channels
+					(with a tab view), and send messages.
+				</p>
+			</div>
+		</section>
+
+		<section id="section-4" class="horizontal">
+			<div id="section-4-left" class="vertical">
+				<h1>RorkeJS</h1>
+				<p>
+					RorkeJS is a small game library written in Javascript. It's constantly
+					being rewritten -- so it could be near complete or barely started if
+					you look at the source code.
+				</p>
+
+				<p>
+					RorkeJS uses Pixi.js to render things using WebGL & tries to make it
+					really easy to create game entities, and handle very standard game
+					physics.
+				</p>
+
+				<p>
+					It can handle background images, sprites, animations, and simple
+					physics such as collision(there is built in elastic collision in which
+					the velocities of each sprite transfer)
+				</p>
+			</div>
+			<div id="section-4-right" class="vertical">
+				<img src="assets/videos/rorke.gif" class="project-image" />
+				<p style="font-size: 1em; color: black;">
+					Here's an example game made with RorkeJS in around 189 lines of code.
+				</p>
+			</div>
+		</section>
+
+		<section id="section-5" class="horizontal">
+			<div id="section-5-left" class="vertical">
+				<img src="assets/videos/sandscript.png" class="project-image" />
+
+				<p style="font-size: 1em;">
+					Here's an example sandscript program on the left, and the code
+					converted into LLVM IR which is essentially an assembly language which
+					will be turned into binary.
+				</p>
+			</div>
+			<div id="section-5-right" class="vertical">
+				<h1>Sandscript</h1>
+				<p>
+					Sandscript is a super basic, toy compiler I've been working on for
+					quite some time. It started out as a project to learn C++.
+				</p>
+
+				<p>
+					I built a small lexer, then started to do some very basic parsing.
+					Eventually, I was able to turn it into a legit albeit basic
+					interpreted language.
+				</p>
+
+				<p>
+					More recently, I've decided to take it a step further and use LLVM to
+					try to make it a compiled language. So far, I'm able to compile
+					functions, with variable declarations. It's still very basic, but it's
+					an ongoing project.
+				</p>
+			</div>
+		</section>
+
+		<section id="section-5-separator" class="horizontal">
+			<h3>
+				These are the three most interesting projects in my opinion, but you can
+				find a lot more on my github
+			</h3>
+		</section>
+
+		<section id="section-6">
+			<div id="section-6-top-left"></div>
+			<div id="section-6-top-right"></div>
+			<div id="section-6-top">
+				<h1>Work</h1>
+			</div>
+
+			<div id="jobs">
+				<div class="job horizontal">
+					<div class="job-title vertical">
+						<h1>Alice Insights</h1>
+						<p>Junior ML & Analytics Platforms Intern</p>
 					</div>
-					<p class="small-project-text">
-						AnimateMe started off as my attempt at a clone of
-						<a
-							href="https://daneden.github.io/animate.css/"
-							target="_blank"
-							class="link"
-							>Animate.css </a
-						>. I learnt about css transformations and transitions buteventually,
-						I decided to add a js portion. This added a functionthat could
-						target elements w/ ids or classes and applytransformations to
-						them(with delay, duration, and easing)
-					</p>
-				</div>
-				<div class="small-project" id="small-project-2" style="opacity: 0;">
-					<img src="assets/img/rorke.jpg" class="small-project-img" />
-					<a
-						href="https://github.com/IbrahimFadel/rorke"
-						target="_blank"
-						class="link"
-					>
-						<h1 class="small-project-title">Rorke</h1>
-					</a>
-					<div class="small-project-icons">
-						<i class="fas fa-gamepad small-project-icon"></i
-						><i class="fab fa-js small-project-icon"></i>
+					<div class="job-list-container">
+						<ul class="job-list">
+							<li>Wrote library for plotting geospatial data on maps</li>
+							<li>Javascript (D3.js)</li>
+						</ul>
 					</div>
-					<p class="small-project-text">
-						Rorke is a small game framework I made(maybe will continuedeveloping
-						later). I made it with<a
-							href="http://pixijs.com"
-							target="_blank"
-							class="link"
-							>pixiJS</a
-						>and LOT'S and LOT'S of rewrites. I'm pretty proud of it, and you
-						canmake some interesting things with it, but I never felt like
-						itreached its full potential :(
-					</p>
 				</div>
-				<div class="small-project" id="small-project-3" style="opacity: 0;">
-					<img />
-					<h1 class="small-project-title">Interchange-Tunes</h1>
-				</div>
-				<div class="small-project" id="small-project-4" style="opacity: 0;">
-					<img src="assets/img/apocalypse.png" class="small-project-img" />
-					<h1 class="small-project-title">Apocalypse</h1>
-					<div class="small-project-icons">
-						<i class="fas fa-gamepad small-project-icon"></i
-						><i class="fab fa-js small-project-icon"></i>
+
+				<div class="job horizontal">
+					<div class="job-title vertical">
+						<h1>World Affairs Conference</h1>
+						<p>Director of Technology</p>
 					</div>
-					<p class="small-project-text">
-						Apocalypse was a game I made with<a
-							href="http://phaser.io"
-							target="_blank"
-							class="link"
-							>phaserJS</a
-						>. I really tried to commit to finishing it, and I got pretty
-						far.There's an inventory, two weapons, infinite enemy spawning,
-						loot,and ammo. Not too shabby.
-					</p>
-				</div>
-				<div class="small-project" id="small-project-5" style="opacity: 0;">
-					<img />
-					<h1 class="small-project-title">Mysync</h1>
-				</div>
-				<div class="small-project" id="small-project-6" style="opacity: 0;">
-					<img src="assets/img/battlesim.gif" class="small-project-img" />
-					<h1 class="small-project-title">Battle Simulator</h1>
-					<div class="small-project-icons">
-						<i class="fas fa-gamepad small-project-icon"></i
-						><i class="fab fa-js small-project-icon"></i>
+					<div class="job-list-container">
+						<ul class="job-list">
+							<li>Oversee all web development</li>
+							<li>Run online registration</li>
+							<li>Manage team of developers</li>
+							<li>ReactJS + HTML/CSS</li>
+						</ul>
 					</div>
-					<p class="small-project-text">
-						This battle simulator was my first real project. I used
-						typescriptand<a href="http://phaser.io" target="_blank" class="link"
-							>phaserJS</a
-						>. As you can see it's pretty unpolished, but it's still pretty
-						funto play around with(Pink team is OP)
-					</p>
 				</div>
 			</div>
-		</div>
-		<div id="bigger-projects-container">
-			<div id="bigger-projects-title-container">
-				<h1 id="bigger-projects-title">Bigger Projects</h1>
-				<div id="bigger-projects-title-underline"></div>
-			</div>
-			<div id="bigger-projects">
-				<div class="bigger-project">
-					<img src="assets/img/wac.png" class="bigger-project-image" />
-					<h1 class="bigger-project-title">World Affairs Conference</h1>
-					<div class="bigger-project-icons-container">
-						<i class="fab fa-html5 bigger-project-icon"></i>
-						<i class="fab fa-css3 bigger-project-icon"></i>
+		</section>
+
+		<section id="section-7" class="vertical">
+			<div id="section-7-title" class="vertical">
+				<h1>Contact Me</h1>
+				<div class="horizontal" style="column-gap: 5%;">
+					<div class="contact-group horizontal">
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						<h5>IbrahimFadel</h5>
 					</div>
-					<p class="bigger-project-text">
-						The
-						<a
-							class="link"
-							href="http://worldaffairs.ucc.on.ca/"
-							target="_blank"
-							>World Affairs Conference</a
-						>
-						is the North America's largest annual student-run current
-						affairsconference. It is held at Upper Canada College where I attend
-						highschool. I've been on their web development team since grade 9,
-						working on their front end, updating it for each year.
-					</p>
-				</div>
-				<div class="bigger-project">
-					<img src="assets/img/amnesty.jpg" class="bigger-project-image" />
-					<h1 class="bigger-project-title">Amnesty UCC</h1>
-					<div class="alert alert-danger still-in-dev" role="alert">
-						Still in Development
+					<div class="contact-group horizontal">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<h5>ibrahim.m.fadel@gmail.com</h5>
 					</div>
-					<div class="bigger-project-icons-container">
-						<i class="fab fa-react bigger-project-icon"></i>
-						<i class="fas fa-server bigger-project-icon"></i>
+					<div class="contact-group horizontal">
+						<i class="fa fa-github" aria-hidden="true"></i>
+						<h5>IbrahimFadel</h5>
 					</div>
-					<p>
-						The
-						<a class="link" href="http://amnestyucc.com" target="_blank"
-							>Amnesty International</a
-						>club at my high school, Upper Canada College, writes articles,
-						holdsyearly events and tries to educate the school about
-						humanitarianissues. In the 2018/2019 school year I started work on
-						theirwebsite. It's built with
-						<a class="link" href="https://reactjs.org/" target="_blank"
-							>reactjs</a
-						>
-						and it uses
-						<a class="link" href="https://firebase.google.com/" target="_blank"
-							>firebase</a
-						>
-						for the backend. This year i'm writing articles so be sure to
-						checkout the website to read up!
-					</p>
-				</div>
-				<div class="bigger-project">
-					<img src="assets/img/uccbook.png" class="bigger-project-image" />
-					<h1 class="bigger-project-title">UCC Book Exchange</h1>
-					<div class="alert alert-danger still-in-dev" role="alert">
-						Still in Development
-					</div>
-					<div class="bigger-project-icons-container">
-						<i class="fab fa-react bigger-project-icon"></i>
-						<i class="fas fa-server bigger-project-icon"></i>
-					</div>
-					<p>
-						The
-						<a class="link" href="https://uccbookexchange.com" target="_blank"
-							>UCC Book Exchange</a
-						>
-						was my IB Personal Project. It is a website that helps connect
-						students at my high school who want to sell/buy textbooks. It's
-						always a struggle finding someone who needs your book, or someone
-						who has the one you want. Especially if you don't know people in
-						different grades. This website allows you to browse textbooks people
-						have listed, message the owner and place a bid. It makes buying and
-						selling your textbooks super simple.
-					</p>
 				</div>
 			</div>
-		</div>
-		<div id="contact-me-container">
-			<h1 id="contact-me-title">Contact Me</h1>
-			<div id="contact-me-methods-container">
-				<div id="contact-me-methods-alerts">
-					<a class="link" href="https://github.com/IbrahimFadel" target="_blank"
-						><div class="alert alert-danger contact-alert" role="alert">
-							Github: IbrahimFadel
-						</div></a
-					>
-					<a
-						><div class="alert alert-primary contact-alert" role="alert">
-							Email: ibrahim.fadel@ucc.on.ca
-						</div>
-					</a>
-					<a
-						><div class="alert alert-success contact-alert" role="alert">
-							Phone: 416-709-5855
-						</div></a
-					>
-				</div>
-				<!-- <div id="contact-me-methods-form"> -->
-				<!-- <form id="contact-me-methods-form" action="/sendMessage" method="POST">
-					<h3>Send me an email</h3>
-					<input name="from" type="text" placeholder="youremail@gmail.com" />
-					<input name="subject" type="text" placeholder="subject" />
-					<textarea name="body" placeholder="body"></textarea>
-					<button type="submit">Send</button>
-				</form> -->
-				<!-- </div> -->
-			</div>
-		</div>
-		<script defer src="js/animateme.js"></script>
-		<script defer src="js/index.js"></script>
-		<script defer src="js/animations.js"></script>
+
+			<button id="resume-download">
+				<a href="assets/resume.pdf" download="IbrahimFadel-Resume.pdf">
+					<h1>Resume</h1>
+				</a>
+			</button>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
