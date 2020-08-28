@@ -14,7 +14,7 @@ tl.add({
 	.add(
 		{
 			targets: '#name-underline',
-			width: 250,
+			width: 240,
 		},
 		'-=500',
 	)
@@ -24,4 +24,32 @@ tl.add({
 			opacity: 1,
 		},
 		'-=500',
+	)
+	.add(
+		{
+			targets: '#logo',
+			opacity: 1,
+		},
+		'-=1250',
 	);
+
+const logo = document.getElementById('logo');
+
+const logoHoveredScale = 1.2;
+
+const logoMouseEntered = () => {
+	anime({
+		targets: logo,
+		scale: logoHoveredScale,
+	});
+};
+
+const logoMouseLeft = () => {
+	anime({
+		targets: logo,
+		scale: 1,
+	});
+};
+
+logo.addEventListener('mouseenter', logoMouseEntered);
+logo.addEventListener('mouseleave', logoMouseLeft);
