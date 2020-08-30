@@ -1,3 +1,10 @@
+:root {
+	--dark: #292929;
+	--light: #fff;
+	--lighter: rgb(226, 226, 226);
+	--accent: #f7484e;
+}
+
 @font-face {
 	font-family: GB;
 	src: url('../assets/fonts/Gravity-Book.otf');
@@ -20,8 +27,22 @@ h4,
 h5,
 p,
 a,
-ul {
+ul,
+div {
 	font-family: GL;
+}
+
+a {
+	color: black;
+	outline: none;
+}
+
+a img {
+	outline: none;
+}
+
+img {
+	border: 0;
 }
 
 * {
@@ -54,7 +75,7 @@ html {
 #header-corner {
 	width: 12.5vw;
 	height: 12.5vw;
-	background-color: #fff;
+	background-color: var(--light);
 
 	transform: rotate(45deg);
 
@@ -68,11 +89,11 @@ html {
 #section-1 {
 	width: 100vw;
 	height: 100vh;
-	background-color: #292929;
+	background-color: var(--dark);
 
 	align-items: center;
 
-	color: white;
+	color: var(--light);
 	letter-spacing: 1.5px;
 	font-size: 1.5em;
 	text-align: center;
@@ -97,7 +118,7 @@ html {
 }
 
 #name-underline {
-	background-color: #fff;
+	background-color: var(--light);
 	height: 1px;
 	width: 0;
 }
@@ -111,7 +132,7 @@ html {
 }
 
 #section-1-footer a {
-	color: #f7484e;
+	color: var(--accent);
 	text-decoration: none;
 }
 
@@ -128,7 +149,7 @@ html {
 
 #section-2-left {
 	width: 50%;
-	background-color: #f7484e;
+	background-color: var(--accent);
 
 	align-items: center;
 	font-size: 2em;
@@ -138,7 +159,7 @@ html {
 	width: 50%;
 	padding-left: 5%;
 	padding-right: 5%;
-	background-color: #fff;
+	background-color: var(--light);
 	text-align: center;
 	align-items: center;
 	row-gap: 10%;
@@ -147,7 +168,7 @@ html {
 }
 
 #below-link {
-	color: #f7484e;
+	color: var(--accent);
 }
 
 #below-link:hover {
@@ -161,40 +182,62 @@ html {
 	height: 100vh;
 
 	align-items: center;
-	row-gap: 5vh;
 }
 
-#section-3-title {
-	font-size: 2em;
-}
-
-#section-3-gif {
-	/* width: 50%; */
+.project-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: var(--lighter);
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	opacity: 0;
-	transition: all 0.5s ease;
-	transform: translateY(50px);
+	transition: opacity 0.5s ease;
+
+	justify-content: center;
+	align-items: center;
 }
 
-#section-3-terminal {
-	width: 50%;
-	height: 50%;
-	background-color: #292929;
-	border-radius: 10px;
-	padding: 10px;
+.project-overlay > div {
+	height: 100%;
+	padding: 5%;
+	justify-content: space-between;
+	/* align-items: left; */
+	align-items: flex-start;
 }
 
-#section-3-terminal-content {
-	justify-content: left;
-	column-gap: 0;
-}
-
-#section-3-terminal-text {
-	color: white;
-}
-
-#section-3-terminal-cursor {
-	width: 5px;
-	height: 20px;
+.project {
+	width: 30%;
 	position: relative;
-	background-color: #fff;
+	overflow: hidden;
+}
+
+.project > img {
+	transition: all 0.5s ease;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.project:hover {
+	cursor: pointer;
+}
+
+.project:hover img {
+	opacity: 0.2;
+	transform: scale(1.1);
+}
+
+.project:hover .project-overlay {
+	opacity: 0.75;
+}
+
+.project-image {
+	width: 100%;
+}
+
+.project-alert {
+	background-color: var(--accent);
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 0.8em;
 }
