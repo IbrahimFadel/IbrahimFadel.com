@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ibrahim Fadel</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content="My personal website/portfolio" />
+		<meta name="keywords" content="Ibrahim, Fadel, Programming, Code" />
+		<meta name="author" content="Ibrahim Fadel" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preload" href="assets/fonts/Gravity-Light.otf" as="font" type="font/otf" crossorigin>
+		<link rel="preload" href="assets/logo.svg">
+
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<section id="section-1" class="vertical">
+			<a href="#"><img alt="logo" src="assets/logo.svg" id="logo" /></a>
+			<div class="vertical">
+				<h1 id="name">Ibrahim Fadel</h1>
+				<div id="name-underline"></div>
+			</div>
+
+			<div id="section-1-footer" class="horizontal">
+				<a href="#section-2">About</a>
+				<p style="margin-left: 10px; margin-right: 10px">/</p>
+				<a href="#section-3">Projects</a>
+				<p style="margin-left: 10px; margin-right: 10px">/</p>
+				<a href="#section-6">Work</a>
+				<p style="margin-left: 10px; margin-right: 10px">/</p>
+				<a href="#section-7">Contact</a>
+			</div>
+		</section>
+
+		<section id="section-2" class="horizontal">
+			<div id="section-2-left" class="vertical">
+				<h1>About</h1>
+			</div>
+			<div id="section-2-right" class="vertical">
+				<p>
+					I'm currently starting my junior year of highschool in Toronto,
+					Ontario!
+				</p>
+				<p>I like trying to make cool things with code</p>
+				<p>
+					Unfortunately, I'm quite 'creatively challenged' so I tend to stick to
+					less visual projects
+				</p>
+				<p>
+					Most of my projects go unfinished (48 github repos) -- usually because
+					I've thought of something "more interesting" to do. Although, a few
+					are done enough to show here!
+					<br />
+					<br />
+					See
+					<a href="#section-3" id="below-link" style="text-decoration: none"
+						>below</a
+					>
+					:)
+				</p>
+			</div>
+		</section>
+
+		<section id="section-3" class="vertical">
+			<h1 id="section-3-title">Sandscript</h1>
+
+			<img alt="Short animation showing a sample sandscript file" src="assets/videos/sandscript.gif" id="section-3-gif"></img>
+			<!-- <div id="section-3-terminal">
+				<div id="section-3-terminal-content" class="horizontal">
+					<div id="section-3-terminal-text"></div>
+				</div>
+			</div> -->
+		</section>
+
+		<!-- <div class="triangle"></div>
+
+		<section id="section-3" class="horizontal">
+			<div id="section-3-left" class="vertical">
+				<img src="assets/videos/sirc.gif" class="project-image" />
+				<p style="font-size: 0.5em;">
+					Some sample usage of the IRC client
+				</p>
+			</div>
+			<div id="section-3-right" class="vertical">
+				<h1>SIRC</h1>
+				<p>Simple IRC is a tiny IRC client I made with Typescript</p>
+
+				<p>
+					SIRC connects you to IRC servers, and allows very simple IRC
+					functionality. I did some very basic IRC message parsing with regex.
+					With that, you can join channels, which between multiple channels
+					(with a tab view), and send messages.
+				</p>
+			</div>
+		</section>
+
+		<section id="section-4" class="horizontal">
+			<div id="section-4-left" class="vertical">
+				<h1>RorkeJS</h1>
+				<p>
+					RorkeJS is a small game library written in Javascript. It's constantly
+					being rewritten -- so it could be near complete or barely started if
+					you look at the source code.
+				</p>
+
+				<p>
+					RorkeJS uses Pixi.js to render things using WebGL & tries to make it
+					really easy to create game entities, and handle very standard game
+					physics.
+				</p>
+
+				<p>
+					It can handle background images, sprites, animations, and simple
+					physics such as collision(there is built in elastic collision in which
+					the velocities of each sprite transfer)
+				</p>
+			</div>
+			<div id="section-4-right" class="vertical">
+				<img src="assets/videos/rorke.gif" class="project-image" />
+				<p style="font-size: 1em; color: black;">
+					Here's an example game made with RorkeJS in around 189 lines of code.
+				</p>
+			</div>
+		</section>
+
+		<section id="section-5" class="horizontal">
+			<div id="section-5-left" class="vertical">
+				<img src="assets/videos/sandscript.png" class="project-image" />
+
+				<p style="font-size: 1em;">
+					Here's an example sandscript program on the left, and the code
+					converted into LLVM IR which is essentially an assembly language which
+					will be turned into binary.
+				</p>
+			</div>
+			<div id="section-5-right" class="vertical">
+				<h1>Sandscript</h1>
+				<p>
+					Sandscript is a super basic, toy compiler I've been working on for
+					quite some time. It started out as a project to learn C++.
+				</p>
+
+				<p>
+					I built a small lexer, then started to do some very basic parsing.
+					Eventually, I was able to turn it into a legit albeit basic
+					interpreted language.
+				</p>
+
+				<p>
+					More recently, I've decided to take it a step further and use LLVM to
+					try to make it a compiled language. So far, I'm able to compile
+					functions, with variable declarations. It's still very basic, but it's
+					an ongoing project.
+				</p>
+			</div>
+		</section>
+
+		<section id="section-5-separator" class="horizontal">
+			<h3>
+				These are the three most interesting projects in my opinion, but you can
+				find a lot more on my github
+			</h3>
+		</section>
+
+		<section id="section-6">
+			<div id="section-6-top-left"></div>
+			<div id="section-6-top-right"></div>
+			<div id="section-6-top">
+				<h1>Work</h1>
+			</div>
+
+			<div id="jobs">
+				<div class="job horizontal">
+					<div class="job-title vertical">
+						<h1>Alice Insights</h1>
+						<p>Junior ML & Analytics Platforms Intern</p>
+					</div>
+					<div class="job-list-container">
+						<ul class="job-list">
+							<li>Wrote library for plotting geospatial data on maps</li>
+							<li>Javascript (D3.js)</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="job horizontal">
+					<div class="job-title vertical">
+						<h1>World Affairs Conference</h1>
+						<p>Director of Technology</p>
+					</div>
+					<div class="job-list-container">
+						<ul class="job-list">
+							<li>Oversee all web development</li>
+							<li>Run online registration</li>
+							<li>Manage team of developers</li>
+							<li>ReactJS + HTML/CSS</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="section-7" class="vertical">
+			<div id="section-7-title" class="vertical">
+				<h1>Contact Me</h1>
+				<div class="horizontal" style="column-gap: 5%;">
+					<div class="contact-group horizontal">
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						<h5>IbrahimFadel</h5>
+					</div>
+					<div class="contact-group horizontal">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<h5>ibrahim.m.fadel@gmail.com</h5>
+					</div>
+					<div class="contact-group horizontal">
+						<i class="fa fa-github" aria-hidden="true"></i>
+						<h5>IbrahimFadel</h5>
+					</div>
+				</div>
+			</div>
+
+			<button id="resume-download">
+				<a href="assets/resume.pdf" download="IbrahimFadel-Resume.pdf">
+					<h1>Resume</h1>
+				</a>
+			</button>
+		</section> -->
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
