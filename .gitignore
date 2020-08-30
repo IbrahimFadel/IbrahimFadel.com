@@ -4,3 +4,7 @@ js/.DS_Store/
 fonts/.DS_Store/
 img/.DS_Store/
 constants.js
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
