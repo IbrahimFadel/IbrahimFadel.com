@@ -30,19 +30,6 @@
 	text-align: center;
 }
 
-#logo {
-	position: fixed;
-	top: 2.5vh;
-	left: 2.5vh;
-	width: 10vh;
-	z-index: 99999999999;
-	opacity: 0;
-}
-
-#logo:hover {
-	cursor: pointer;
-}
-
 #name {
 	opacity: 0;
 	font-weight: 100;

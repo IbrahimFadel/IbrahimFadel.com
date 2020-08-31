@@ -38,6 +38,8 @@
 #section-1 {
 	width: 100vw;
 	height: 100%;
+	/* padding-left: 50px; */
+	/* padding-top: 50px; */
 	padding-left: 5vw;
 	padding-top: 5vh;
 	padding-bottom: 5vh;

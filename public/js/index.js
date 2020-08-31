@@ -27,7 +27,7 @@ tl.add({
 	)
 	.add(
 		{
-			targets: '#logo',
+			targets: '.logo',
 			opacity: 1,
 		},
 		'-=1250',
@@ -43,7 +43,7 @@ new ScrollMagic.Scene({
 	.setClassToggle('#section-3-gif', 'visible')
 	.addTo(controller);
 
-const logo = document.getElementById('logo');
+const logo = document.getElementsByClassName('logo')[0];
 
 const logoHoveredScale = 1.2;
 
