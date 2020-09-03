@@ -97,8 +97,20 @@
 
 #section-3 {
 	width: 100vw;
-	height: 100vh;
+	/* height: 100vh; */
 
+	align-items: center;
+	row-gap: 5vh;
+
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+#section-3 > h1 {
+	font-size: 2em;
+}
+
+#section-3-projects {
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -163,4 +175,80 @@
 
 .project-icon {
 	font-size: 1.5em;
+}
+
+#section-4 {
+	width: 100vw;
+	height: 100vh;
+
+	justify-content: space-around;
+	align-items: center;
+}
+
+#section-4 > h1 {
+	font-size: 2em;
+}
+
+#section-4-works {
+	align-items: center;
+	flex-wrap: wrap;
+	column-gap: 3vw;
+}
+
+.work {
+	width: 400px;
+	position: relative;
+	overflow: hidden;
+	transition: opacity 1s ease;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	box-shadow: #292929aa 3px 5px 15px;
+}
+
+.work-image {
+	transition: all 0.5s ease;
+	border-radius: 5px;
+	overflow: hidden;
+	max-width: 50%;
+}
+
+.work-description {
+	text-align: center;
+}
+
+.work-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: var(--lighter);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.work-overlay > div {
+	height: 100%;
+	padding: 5%;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.work:hover {
+	cursor: pointer;
+}
+
+.work:hover .work-image {
+	opacity: 0.35;
+	transform: scale(1.2);
+}
+
+.work:hover .work-overlay {
+	opacity: 0.65;
 }

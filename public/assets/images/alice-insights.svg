@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="1000px" viewBox="0 0 632.26 595.28">
+						<ellipse
+							class="cls-1"
+							cx="575.12"
+							cy="709.96"
+							rx="77.4"
+							ry="203.17"
+							transform="translate(-554.54 85.31) rotate(-30)"
+						></ellipse>
+						<ellipse
+							class="cls-1"
+							cx="398.34"
+							cy="710.7"
+							rx="203.17"
+							ry="77.4"
+							transform="translate(-692.93 402.95) rotate(-60)"
+						></ellipse>
+						<ellipse
+							class="cls-1"
+							cx="787.15"
+							cy="712.44"
+							rx="77.4"
+							ry="203.17"
+							transform="translate(-527.38 191.66) rotate(-30)"
+						></ellipse>
+						<circle class="cls-1" cx="315.16" cy="77.41" r="77.41"></circle>
+					</svg>
