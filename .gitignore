@@ -1,12 +1,6 @@
-.DS_Store/
-css/.DS_Store/
-js/.DS_Store/
-fonts/.DS_Store/
-img/.DS_Store/
-constants.js
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
-node_modules/
+.DS_Store
 .gitignore
+.git/
+js/.DS_Store
+css/.DS_Store
+assets/.DS_Store
