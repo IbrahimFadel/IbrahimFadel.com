@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
 :root {
 	--dark: #282828;
 	--light: #fff;
-	--lighter: rgb(226, 226, 226);
+	--lighter: rgb(250, 248, 248);
 	--accent: #f7484e;
 	/* --code-bg: #a89984;
 	--code-fg: #282828;
@@ -40,7 +42,7 @@
 h1,
 h2,
 h3 {
-	font-family: GL;
+	/* font-family: GL; */
 }
 
 h4,

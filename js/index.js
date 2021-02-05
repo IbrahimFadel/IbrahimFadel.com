@@ -63,3 +63,21 @@ const logoMouseLeave = () => {
 
 logo.addEventListener('mouseenter', logoMouseEnter);
 logo.addEventListener('mouseleave', logoMouseLeave);
+
+const section2Arrow = document.getElementById("section-2-arrow");
+
+const section2ArrowMouseEnter = () => {
+	anime({
+		targets: section2Arrow,
+		scale: 1.1
+	});
+};
+const section2ArrowMouseLeave = () => {
+	anime({
+		targets: section2Arrow,
+		scale: 1
+	});
+};
+
+section2Arrow.addEventListener('mouseenter', section2ArrowMouseEnter);
+section2Arrow.addEventListener('mouseleave', section2ArrowMouseLeave);

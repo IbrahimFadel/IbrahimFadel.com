@@ -62,35 +62,40 @@
 
 #section-2 {
 	width: 100vw;
-	height: 100vh;
-}
-
-#section-2-left {
-	width: 50%;
-	background-color: var(--accent);
-
-	align-items: center;
-	font-size: 2em;
-}
-
-#section-2-right {
-	width: 50%;
-	padding-left: 5%;
-	padding-right: 5%;
 	background-color: var(--light);
-	text-align: center;
+	color: var(--dark);
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	row-gap: 10%;
-	letter-spacing: 1.2px;
-	line-height: 25px;
 }
 
-#below-link {
-	color: var(--accent);
+#section-2 > h1 {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 2em;
+	text-align: center;
 }
 
-#below-link:hover {
+#section-2 > p {
+	width: 70%;
+	margin-top: 25px;
+	font-size: 1.3em;
+	line-height: 2em;
+}
+
+#section-2-arrow {
+	width: 150px;
+	margin-top: 50px;
 	cursor: pointer;
+}
+
+.accent {
+	/* text-decoration: underline; */
+	color: var(--accent);
 }
 
 /* ********************* */
@@ -98,161 +103,86 @@
 #section-3 {
 	width: 100vw;
 	/* height: 100vh; */
-
-	align-items: center;
-	row-gap: 5vh;
-
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-}
-
-#section-3 > h1 {
-	font-size: 2em;
-}
-
-#section-3-projects {
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.project-overlay {
-	width: 100%;
-	height: 100%;
 	background-color: var(--lighter);
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	opacity: 0;
-	transition: opacity 0.5s ease;
 
-	justify-content: center;
-	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
-.project-overlay > div {
-	height: 100%;
-	padding: 5%;
-	justify-content: space-between;
-	/* align-items: left; */
-	align-items: flex-start;
-}
-
-.project {
-	width: 400px;
-	position: relative;
-	overflow: hidden;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.project > img {
-	transition: all 0.5s ease;
-	border-radius: 5px;
-	overflow: hidden;
-}
-
-.project:hover {
-	cursor: pointer;
-}
-
-.project:hover img {
-	opacity: 0.35;
-	transform: scale(1.2);
-}
-
-.project:hover .project-overlay {
-	opacity: 0.65;
-}
-
-.project-image {
-	width: 100%;
-}
-
-.project-alert {
-	background-color: var(--accent);
-	padding: 5px;
-	border-radius: 5px;
-	font-size: 0.8em;
-}
-
-.project-icon {
-	font-size: 1.5em;
-}
-
-#section-4 {
-	width: 100vw;
-	height: 100vh;
-
-	justify-content: space-around;
-	align-items: center;
-}
-
-#section-4 > h1 {
+#section-3-title {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
 	font-size: 2em;
-}
-
-#section-4-works {
-	align-items: center;
-	flex-wrap: wrap;
-	column-gap: 3vw;
-}
-
-.work {
-	width: 400px;
-	position: relative;
-	overflow: hidden;
-	transition: opacity 1s ease;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	box-shadow: #292929aa 3px 5px 15px;
-}
-
-.work-image {
-	transition: all 0.5s ease;
-	border-radius: 5px;
-	overflow: hidden;
-	max-width: 50%;
-}
-
-.work-description {
 	text-align: center;
 }
 
-.work-overlay {
-	width: 100%;
-	height: 100%;
-	background-color: var(--lighter);
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	opacity: 0;
-	transition: opacity 0.5s ease;
+#section-3-hr {
+	margin: auto;
+	margin-top: 15px;
+	width: 50%;
+	border: none;
 
+	border-top: medium double var(--dark);
+	color: var(--dark);
+	padding: 1px;
+}
+
+#section-3-subtitle {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.section-3-panel {
+	margin-top: 50px;
+	margin-left: 50px;
+	color: var(--dark);
+
+	display: flex;
+}
+
+.section-3-panel-left {
+	flex: 1;
+}
+
+.section-3-panel h1 {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	/* text-shadow: 2px 3px 7px var(--dark); */
+}
+
+.section-3-panel p {
+	max-width: calc(100% - 50px);
+	margin-top: 10px;
+	line-height: 1.5em;
+}
+
+.section-3-panel button {
+	margin-top: 15px;
+	padding: 10px 15px 10px 15px;
+	border: none;
+	background-color: var(--dark);
+	color: var(--light);
+	cursor: pointer;
+}
+
+.section-3-panel-right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.work-overlay > div {
-	height: 100%;
-	padding: 5%;
-	justify-content: space-between;
-	align-items: flex-start;
+.section-3-panel-right img {
+	width: 90%;
 }
 
-.work:hover {
-	cursor: pointer;
-}
+@media only screen and (max-width: 1000px) {
+	.section-3-panel {
+		flex-direction: column;
+	}
 
-.work:hover .work-image {
-	opacity: 0.35;
-	transform: scale(1.2);
-}
-
-.work:hover .work-overlay {
-	opacity: 0.65;
+	.section-3-panel-right img {
+		width: 70%;
+	}
 }

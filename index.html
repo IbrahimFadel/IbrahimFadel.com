@@ -46,7 +46,53 @@
 			</div>
 		</section>
 
-		<section id="section-2" class="horizontal">
+		<section id="section-2">
+			<h1>About Me</h1>
+
+			<p>I am a highschool student who loves to <span class="accent">make</span> things. I haven&apos;t figured out which area I love the most yet, but so far I&apos;ve been dabbling in webdev, game design, compiler design as well as just random projects :)</p>
+
+			<a href="#section-3"><img src="assets/downArrow.svg" id="section-2-arrow"></a>
+		</section>
+
+
+		<section id="section-3">
+			<h1 id="section-3-title">Projects</h1>
+			<hr id="section-3-hr">
+			<p id="section-3-subtitle">Here&apos;s what i&apos;ve done so far</p>
+
+			<article class="section-3-panel">
+				<div class="section-3-panel-left">
+					<h1>Sandscript</h1>
+					<p>This project started off as a way for me to learn C++. I was bored by all the examples online, so I decided I would try to make a programming language (because I heard people did those in C++). Originally, it was just a simple interpreted language that looked sort of like Typescript. It wasn't very interesting, but it had variables, functions, and some basic control flow.</p>
+					<p>Eventually, I decided to take it a step forward and make it <span class="accent">compiled</span>. I came across LLVM -- a super incredible project that can handle all the codegen. Using LLVM, I built my first attempt at a compiler. I&apos;ve been rewriting and rewriting for a long time now trying to land on a version i&apos;m happy with (still not there).</p>
+					<p>This whole project ended up leading me down the rabbit whole of lower level programming. In general, i&apos;ve much more interested in the low level aspects of computers and compilers in general, and it&apos; been nice exploring those.</p>
+					<a target="__blank" href="https://github.com/IbrahimFadel/sandscript"><button>Github</button></a>
+				</div>
+
+				<div class="section-3-panel-right">
+					<img src="assets/images/sandscript.png">
+					<caption>A Sandscript code snippet</caption>
+				</div>
+			</article>
+		</section>
+
+		<!-- <section id="section-2"> -->
+			<!-- <article class="section-2-panel">
+				<div class="section-2-panel-left">Sandscript</div>
+				<div class="section-2-panel-right">Hi</div>
+			</article>
+			<article class="section-2-panel">
+				<div class="section-2-panel-left">Test</div>
+				<div class="section-2-panel-right">There</div>
+			</article> -->
+			<!-- <div id="section-2-left"></div> -->
+			<!-- <article class="section-2-panel"></article> -->
+			<!-- <article class="section-2-panel"></article> -->
+			<!-- <article class="section-2-panel"></article> -->
+			<!-- <div id="section-2-right"></div> -->
+		<!-- </section> -->
+
+		<!-- <section id="section-2" class="horizontal">
 			<div id="section-2-left" class="vertical">
 				<h1>About</h1>
 			</div>
@@ -73,10 +119,9 @@
 					:)
 				</p>
 			</div>
-		</section>
+		</section> -->
 
-		<hr style="background-color: var(--dark)" />
-		<!-- <hr style="color: var(--accent)" /> -->
+		<!-- <hr style="background-color: var(--dark)" />
 
 		<section id="section-3" class="vertical">
 			<h1>Portfolio</h1>
@@ -110,7 +155,6 @@
 								and message people) but it was mostly just to learn about
 								implementing a protocol like IRC.
 							</p>
-							<!-- <i class="fab fa-node project-icon" style="font-size: 2em"></i> -->
 							<i class="fab fa-node-js project-icon"></i>
 						</div>
 					</div>
@@ -238,9 +282,10 @@
 					</div>
 				</a>
 			</div>
-		</section>
+		</section> -->
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
 		<script src="js/index.js"></script>
 	</body>
