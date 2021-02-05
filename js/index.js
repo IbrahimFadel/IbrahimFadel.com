@@ -81,3 +81,12 @@ const section2ArrowMouseLeave = () => {
 
 section2Arrow.addEventListener('mouseenter', section2ArrowMouseEnter);
 section2Arrow.addEventListener('mouseleave', section2ArrowMouseLeave);
+
+const section3Panels = document.querySelectorAll('article.section-3-panel');
+
+for(const panel of section3Panels) {
+	new ScrollMagic.Scene({triggerElement: panel, triggerHook: 0.7})
+					.setClassToggle(panel, "visible") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+}

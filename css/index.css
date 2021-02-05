@@ -136,18 +136,22 @@
 	margin-top: 50px;
 	margin-left: 50px;
 	color: var(--dark);
+	opacity: 0;
+	transition: opacity 1s ease;
 
 	display: flex;
 }
 
 .section-3-panel-left {
 	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .section-3-panel h1 {
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
-	/* text-shadow: 2px 3px 7px var(--dark); */
 }
 
 .section-3-panel p {
@@ -175,6 +179,17 @@
 
 .section-3-panel-right img {
 	width: 90%;
+	/* max-height: 80%; */
+}
+
+#section-3-rorke-img {
+	width: auto;
+	height: 60%;
+}
+
+#section-3-sirc-img {
+	width: 75%;
+	height: auto;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -184,5 +199,10 @@
 
 	.section-3-panel-right img {
 		width: 70%;
+	}
+
+	#section-3-rorke-img {
+		height: auto;
+		width: 50%;
 	}
 }
