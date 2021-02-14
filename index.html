@@ -1,331 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Ibrahim Fadel</title>
 
-		<meta charset="utf-8" />
-		<meta name="description" content="My personal website/portfolio" />
-		<meta name="keywords" content="Ibrahim, Fadel, Programming, Code" />
-		<meta name="author" content="Ibrahim Fadel" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+	<title>Ibrahim Fadel</title>
 
-		<link
-			rel="preload"
-			href="assets/fonts/Gravity-Light.otf"
-			as="font"
-			type="font/otf"
-			crossorigin
-		/>
-		<link rel="preload" href="assets/logo.svg" />
+	<meta charset="utf-8" />
+	<meta name="description" content="My personal website/portfolio" />
+	<meta name="keywords" content="Ibrahim, Fadel, Programming, Code" />
+	<meta name="author" content="Ibrahim Fadel" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<script
-			src="https://kit.fontawesome.com/bb13721306.js"
-			crossorigin="anonymous"
-		></script>
+	<link rel="preload" href="assets/fonts/Gravity-Light.otf" as="font" type="font/otf" crossorigin />
+	<link rel="preload" href="assets/logo.svg" />
 
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-	</head>
+	<script src="https://kit.fontawesome.com/bb13721306.js" crossorigin="anonymous"></script>
 
-	<body>
-		<section id="section-1" class="vertical">
-			<a href="#"><img alt="logo" src="assets/logo.svg" class="logo" /></a>
-			<div class="vertical">
-				<h1 id="name">Ibrahim Fadel</h1>
-				<div id="name-underline"></div>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+	<section id="section-1" class="vertical">
+		<a href="#"><img alt="logo" src="assets/logo.svg" class="logo" /></a>
+		<div class="vertical">
+			<h1 id="name">Ibrahim Fadel</h1>
+			<div id="name-underline"></div>
+		</div>
+
+		<div id="section-1-footer" class="horizontal">
+			<a href="#section-2">About</a>
+			<p style="margin-left: 10px; margin-right: 10px">/</p>
+			<a href="#section-3">Portfolio</a>
+			<p style="margin-left: 10px; margin-right: 10px">/</p>
+			<a href="#section-5">Work</a>
+			<p style="margin-left: 10px; margin-right: 10px">/</p>
+			<a href="#section-7">Contact</a>
+		</div>
+	</section>
+
+	<section id="section-2">
+		<h1>About Me</h1>
+
+		<p>I am a highschool student who loves to <span class="accent">make</span> things. I haven&apos;t figured out
+			which area I love the most yet, but so far I&apos;ve been dabbling in webdev, game design, compiler design
+			as well as just random projects :) Aside from coding, I love global politics and <span
+				class="accent">writing</span>.</p>
+
+		<a href="#section-3"><img src="assets/downArrow.svg" id="section-2-arrow"></a>
+	</section>
+
+
+	<section id="section-3">
+		<h1 class="section-3-title">Projects</h1>
+		<hr class="section-3-hr">
+		<p class="section-3-subtitle">Here&apos;s what i&apos;ve done so far</p>
+
+		<article class="section-3-panel">
+			<div class="section-3-panel-left">
+				<h1>Sandscript</h1>
+				<p>This project started off as a way for me to learn C++. I was bored by all the examples online, so I
+					decided I would try to make a programming language (because I heard people did those in C++).
+					Originally, it was just a simple interpreted language that looked sort of like Typescript. It wasn't
+					very interesting, but it had variables, functions, and some basic control flow.</p>
+				<p>Eventually, I decided to take it a step forward and make it <span class="accent">compiled</span>. I
+					came across LLVM -- a super incredible project that can handle all the codegen. Using LLVM, I built
+					my first attempt at a compiler. I&apos;ve been rewriting and rewriting for a long time now trying to
+					land on a version i&apos;m happy with (still not there).</p>
+				<p>This whole project ended up leading me down the rabbit whole of lower level programming. In general,
+					i&apos;ve much more interested in the low level aspects of computers and compilers in general, and
+					it&apos; been nice exploring those.</p>
+				<a target="__blank" href="https://github.com/IbrahimFadel/sandscript"><button>Github</button></a>
 			</div>
 
-			<div id="section-1-footer" class="horizontal">
-				<a href="#section-2">About</a>
-				<p style="margin-left: 10px; margin-right: 10px">/</p>
-				<a href="#section-3">Portfolio</a>
-				<p style="margin-left: 10px; margin-right: 10px">/</p>
-				<a href="#section-6">Work</a>
-				<p style="margin-left: 10px; margin-right: 10px">/</p>
-				<a href="#section-7">Contact</a>
+			<div class="section-3-panel-right">
+				<img src="assets/images/sandscript.png">
+				<caption>A Sandscript code snippet</caption>
 			</div>
-		</section>
+		</article>
 
-		<section id="section-2">
-			<h1>About Me</h1>
-
-			<p>I am a highschool student who loves to <span class="accent">make</span> things. I haven&apos;t figured out which area I love the most yet, but so far I&apos;ve been dabbling in webdev, game design, compiler design as well as just random projects :) Aside from coding, I love global politics and <span class="accent">writing</span>.</p>
-
-			<a href="#section-3"><img src="assets/downArrow.svg" id="section-2-arrow"></a>
-		</section>
-
-
-		<section id="section-3">
-			<h1 id="section-3-title">Projects</h1>
-			<hr id="section-3-hr">
-			<p id="section-3-subtitle">Here&apos;s what i&apos;ve done so far</p>
-
-			<article class="section-3-panel">
-				<div class="section-3-panel-left">
-					<h1>Sandscript</h1>
-					<p>This project started off as a way for me to learn C++. I was bored by all the examples online, so I decided I would try to make a programming language (because I heard people did those in C++). Originally, it was just a simple interpreted language that looked sort of like Typescript. It wasn't very interesting, but it had variables, functions, and some basic control flow.</p>
-					<p>Eventually, I decided to take it a step forward and make it <span class="accent">compiled</span>. I came across LLVM -- a super incredible project that can handle all the codegen. Using LLVM, I built my first attempt at a compiler. I&apos;ve been rewriting and rewriting for a long time now trying to land on a version i&apos;m happy with (still not there).</p>
-					<p>This whole project ended up leading me down the rabbit whole of lower level programming. In general, i&apos;ve much more interested in the low level aspects of computers and compilers in general, and it&apos; been nice exploring those.</p>
-					<a target="__blank" href="https://github.com/IbrahimFadel/sandscript"><button>Github</button></a>
-				</div>
-
-				<div class="section-3-panel-right">
-					<img src="assets/images/sandscript.png">
-					<caption>A Sandscript code snippet</caption>
-				</div>
-			</article>
-
-			<article class="section-3-panel">
-				<div class="section-3-panel-left">
-					<h1>RorkeJS</h1>
-					<p>When I first really got into programming, I make a lot of basic game with a framework called <a target="__blank" href="https://phaser.io/" class="accent">Phaser</a>. After a while, I got bored and decided to try to make my own game framework. RorkeJS is quite similar to Phaser -- it uses the <a target="__blank" href="https://www.pixijs.com/" class="accent">PixiJS</a> webGL renderer, and has a similar design in general.</p>
-					<p>Much like most of my projects, I&apos;ve rewritten it too many times to count. I haven&apos;t touched the project in a while though. This project can handle physics, animations, input and all the other tools you need to make an extremely basic game in the browser.</p>
-					<a target="__blank" href="https://github.com/IbrahimFadel/rorkejs"><button>Github</button></a>
-				</div>
-
-				<div class="section-3-panel-right">
-					<img src="assets/videos/rorke.gif" id="section-3-rorke-img">
-					<caption>A game made with RorkeJS</caption>
-				</div>
-			</article>
-
-			<article class="section-3-panel">
-				<div class="section-3-panel-left">
-					<h1>SIRC</h1>
-					<p>SIRC (Simple IRC) is just a basic IRC client. I initially took inspiration from <a target="__blank" href="https://github.com/dylanaraps/birch" class="accent">birch</a> -- I had never heard of IRC and it intrigued me. I decided to take a crack at it and make a terminal based client.</p>
-					<p>I made it in Typescript because I&apos;d been meaning to start using it more and get more used to it. After figuring out how to establish a connection to an IRC server and how to send commands, I basically just implemented some of the IRC protocol (not very much of it). Basically all you can do is connect to a server, join & leave channels, and send messages. It&apos;s not very exciting, but it works and I think it looks decent.</p>
-					<p>Looking through the codebase, I see remnants of times I tried making it into a TUI, and other parts that I never ended up cleaning up. I definitely want to go back and refactor it a bunch when I get the time.</p>
-					<a target="__blank" href="https://github.com/IbrahimFadel/sirc"><button>Github</button></a>
-				</div>
-
-				<div class="section-3-panel-right">
-					<img src="assets/videos/sirc.gif" id="section-3-sirc-img">
-					<caption>Example SIRC usage</caption>
-				</div>
-			</article>
-		</section>
-
-		<section id="section-4">
-			<h1>Some other Experience</h1>
-
-			<p>I, along with a few friends, run the Amnesty International club at my school. There, we learn and spread awareness about humanitarian crises. We aim to write plenty of articles which we publish for students at our school.</p>
-
-			<p>I am also part of the executive team at <a class="accent" target="__blank" href="https://worldaffairs.ucc.on.ca">WAC</a>, an annual student-led conference. I work on the tech team where we hosted the conference online for the first time ever, and maintain the website and registration system.</p>
-
-			<a href="#section-5"><img src="assets/downArrow.svg" id="section-4-arrow"></a>
-		</section>
-
-		<!-- <section id="section-2"> -->
-			<!-- <article class="section-2-panel">
-				<div class="section-2-panel-left">Sandscript</div>
-				<div class="section-2-panel-right">Hi</div>
-			</article>
-			<article class="section-2-panel">
-				<div class="section-2-panel-left">Test</div>
-				<div class="section-2-panel-right">There</div>
-			</article> -->
-			<!-- <div id="section-2-left"></div> -->
-			<!-- <article class="section-2-panel"></article> -->
-			<!-- <article class="section-2-panel"></article> -->
-			<!-- <article class="section-2-panel"></article> -->
-			<!-- <div id="section-2-right"></div> -->
-		<!-- </section> -->
-
-		<!-- <section id="section-2" class="horizontal">
-			<div id="section-2-left" class="vertical">
-				<h1>About</h1>
-			</div>
-			<div id="section-2-right" class="vertical">
-				<p>
-					I'm currently starting my junior year of highschool in Toronto,
-					Ontario!
+		<article class="section-3-panel">
+			<div class="section-3-panel-left">
+				<h1>RorkeJS</h1>
+				<p>When I first really got into programming, I make a lot of basic game with a framework called <a
+						target="__blank" href="https://phaser.io/" class="accent">Phaser</a>. After a while, I got bored
+					and decided to try to make my own game framework. RorkeJS is quite similar to Phaser -- it uses the
+					<a target="__blank" href="https://www.pixijs.com/" class="accent">PixiJS</a> webGL renderer, and has
+					a similar design in general.
 				</p>
-				<p>I like trying to make cool things with code</p>
-				<p>
-					Unfortunately, I'm quite 'creatively challenged' so I tend to stick to
-					less visual projects
-				</p>
-				<p>
-					Most of my projects go unfinished (48 github repos) -- usually because
-					I've thought of something "more interesting" to do. Although, a few
-					are done enough to show here!
-					<br />
-					<br />
-					See
-					<a href="#section-3" id="below-link" style="text-decoration: none"
-						>below</a
-					>
-					:)
-				</p>
+				<p>Much like most of my projects, I&apos;ve rewritten it too many times to count. I haven&apos;t touched
+					the project in a while though. This project can handle physics, animations, input and all the other
+					tools you need to make an extremely basic game in the browser.</p>
+				<a target="__blank" href="https://github.com/IbrahimFadel/rorkejs"><button>Github</button></a>
 			</div>
-		</section> -->
 
-		<!-- <hr style="background-color: var(--dark)" />
-
-		<section id="section-3" class="vertical">
-			<h1>Portfolio</h1>
-
-			<div id="section-3-projects" class="horizontal">
-				<a class="project" href="sandscript.html">
-					<img src="assets/videos/sandscript.gif" class="project-image" />
-					<div class="project-overlay vertical">
-						<div class="vertical">
-							<h1>Sandscript</h1>
-							<p>
-								tl;dr Sandscript is a small compiler i&apos;m making with C++ &
-								LLVM. It&apos;s nowhere near done or even at a state resembling
-								a real language -- but every time i rewrite it I get a bit
-								better, and looks a bit cleaner.
-							</p>
-							<div class="project-alert">In Development</div>
-						</div>
-					</div>
-				</a>
-
-				<a class="project" href="sirc.html">
-					<img src="assets/videos/sirc.gif" class="project-image" />
-					<div class="project-overlay vertical">
-						<div class="vertical">
-							<h1>SIRC</h1>
-							<p>
-								tl;dr Simple IRC -- this project was my attempt at creating a
-								tiny IRC client in Typescript. It's not nearly as feature
-								complete as most IRC clients(all you can do is join channels,
-								and message people) but it was mostly just to learn about
-								implementing a protocol like IRC.
-							</p>
-							<i class="fab fa-node-js project-icon"></i>
-						</div>
-					</div>
-				</a>
-
-				<a class="project" href="sirc.html">
-					<img src="assets/videos/sirc.gif" class="project-image" />
-					<div class="project-overlay vertical">
-						<div class="vertical">
-							<h1>Albumify</h1>
-							<p>
-								tl;dr After switching from Itunes to Spotify I was upset that
-								spotify didn't have an simplified view where you can only see
-								album art and play status. I made a little program that runs
-								alongside Spotify and does just that with C++ & SFML.
-							</p>
-							<i class="fab fa-node-js project-icon"></i>
-						</div>
-					</div>
-				</a>
-
-				<a class="project" href="sirc.html">
-					<img
-						src="assets/videos/itunes-to-spotify.gif"
-						class="project-image"
-					/>
-					<div class="project-overlay vertical">
-						<div class="vertical">
-							<h1>Itunes to Spotify</h1>
-							<p>
-								tl;dr Python script that moves itunes playlists to spotify. Not
-								close to perfect -- but I was able to transfer roughly 95% of my
-								songs with pretty good accuracy. Overall, much easier than doing
-								it manually(and not limited to 200 songs like some services I
-								found). Looking back though, it&apos;s way too verbose.
-							</p>
-							<i class="fab fa-python project-icon"></i>
-						</div>
-					</div>
-				</a>
-
-				<a class="project" href="sirc.html">
-					<img src="assets/videos/sirc.gif" class="project-image" />
-					<div class="project-overlay vertical">
-						<div class="vertical">
-							<h1>RorkeJS</h1>
-							<p>
-								tl;dr RorkeJS is a little game library I made with PixiJS(WebGL
-								renderer). It let&apos;s you load in sprites very easily, make
-								animations, and handle collisions. It&apos;s physics is
-								bare-bones but enough to make a small game.
-							</p>
-							<i class="fab fa-node-js project-icon"></i>
-						</div>
-					</div>
-				</a>
-
-				<a class="project" href="sirc.html">
-					<img src="assets/videos/sirc.gif" class="project-image" />
-					<div class="project-overlay vertical">
-						<div class="vertical">
-							<h1>mywm</h1>
-							<p>
-								tl;dr Teensy X11 window manager. Nothing really too interesting
-								to see in this project -- just me trying to get a bare-bones
-								window manager working. It&apos;s still in very early stages of
-								development.
-							</p>
-							<div class="project-alert">In Development</div>
-						</div>
-					</div>
-				</a>
-
-				<a class="project" href="http://amnestyucc.com" target="__blank">
-					<img
-						src="assets/images/amnesty.png"
-						class="project-image"
-						style="max-width: 70%"
-					/>
-					<div class="project-overlay vertical">
-						<div class="vertical">
-							<h1>Amnesty UCC</h1>
-							<p>
-								tl;dr As co-head of the Amnesty International club at Upper
-								Canada College, I write articles, organize events, and run the
-								website. There you can read our publications.
-							</p>
-						</div>
-					</div>
-				</a>
+			<div class="section-3-panel-right">
+				<img src="assets/videos/rorke.gif" id="section-3-rorke-img">
+				<caption>A game made with RorkeJS</caption>
 			</div>
-		</section>
+		</article>
 
-		<hr style="background-color: var(--dark)" />
-
-		<section id="section-4" class="vertical">
-			<h1>Work</h1>
-
-			<div id="section-4-works" class="horizontal">
-				<a class="work" href="http://worldaffairs.ucc.on.ca" target="__blank">
-					<img src="assets/images/wac.svg" class="work-image" />
-					<div class="work-overlay vertical">
-						<div class="vertical">
-							<h1>WAC</h1>
-							<p>
-								As Director of Technology of North America&apos;s largest annual
-								student-run current affairs conference, I manage a team of web
-								developers, live-stream the conference, and help the WAC team
-								with other tech issues.
-							</p>
-						</div>
-					</div>
-				</a>
-
-				<a class="work" href="http://aliceinsights.com" target="__blank">
-					<img src="assets/images/alice-insights.svg" class="work-image" />
-					<div class="work-overlay vertical">
-						<div class="vertical">
-							<h1>Alice Insights</h1>
-							<p>
-								At Alice Insights I worked on plotting geo-spatial data on 3D/2D
-								maps, dashboards, and general web development.
-							</p>
-						</div>
-					</div>
-				</a>
+		<article class="section-3-panel">
+			<div class="section-3-panel-left">
+				<h1>SIRC</h1>
+				<p>SIRC (Simple IRC) is just a basic IRC client. I initially took inspiration from <a target="__blank"
+						href="https://github.com/dylanaraps/birch" class="accent">birch</a> -- I had never heard of IRC
+					and it intrigued me. I decided to take a crack at it and make a terminal based client.</p>
+				<p>I made it in Typescript because I&apos;d been meaning to start using it more and get more used to it.
+					After figuring out how to establish a connection to an IRC server and how to send commands, I
+					basically just implemented some of the IRC protocol (not very much of it). Basically all you can do
+					is connect to a server, join & leave channels, and send messages. It&apos;s not very exciting, but
+					it works and I think it looks decent.</p>
+				<p>Looking through the codebase, I see remnants of times I tried making it into a TUI, and other parts
+					that I never ended up cleaning up. I definitely want to go back and refactor it a bunch when I get
+					the time.</p>
+				<a target="__blank" href="https://github.com/IbrahimFadel/sirc"><button>Github</button></a>
 			</div>
-		</section> -->
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
-		<script src="js/index.js"></script>
-	</body>
+			<div class="section-3-panel-right">
+				<img src="assets/videos/sirc.gif" id="section-3-sirc-img">
+				<caption>Example SIRC usage</caption>
+			</div>
+		</article>
+	</section>
+
+	<section id="section-4">
+		<h1>Some other Experience</h1>
+
+		<p>I, along with a few friends, run the Amnesty International club at my school. There, we learn and spread
+			awareness about humanitarian crises. We aim to write plenty of articles which we publish for students at our
+			school.</p>
+
+		<p>I am also part of the executive team at <a class="accent" target="__blank"
+				href="https://worldaffairs.ucc.on.ca">WAC</a>, an annual student-led conference. I work on the tech team
+			where we hosted the conference online for the first time ever, and maintain the website and registration
+			system.</p>
+
+		<a href="#section-5"><img src="assets/downArrow.svg" id="section-4-arrow"></a>
+	</section>
+
+	<section id="section-5">
+		<h1 class="section-3-title">Work Experience</h1>
+		<hr class="section-3-hr">
+
+		<article class="section-3-panel" id="section-5-alice-insights">
+			<div class="section-3-panel-left">
+				<h1>Alice Insights</h1>
+				<p>I work at <a target="__blank" href="https://aliceinsights.com/" class="accent">Alice Insights</a> as
+					an software development intern. My main job was modelling geo-spatial data on maps in both three and
+					two dimensions. I also worked on unit tests and general web development.</p>
+			</div>
+
+			<div class="section-3-panel-right" id="section-5-alice-insights-slideshow">
+				<svg viewBox="0 0 632.26 595.28" class="slideShowActive">
+					<ellipse class="cls-1" cx="575.12" cy="709.96" rx="77.4" ry="203.17"
+						transform="translate(-554.54 85.31) rotate(-30)"></ellipse>
+					<ellipse class="cls-1" cx="398.34" cy="710.7" rx="203.17" ry="77.4"
+						transform="translate(-692.93 402.95) rotate(-60)"></ellipse>
+					<ellipse class="cls-1" cx="787.15" cy="712.44" rx="77.4" ry="203.17"
+						transform="translate(-527.38 191.66) rotate(-30)"></ellipse>
+					<circle class="cls-1" cx="315.16" cy="77.41" r="77.41"></circle>
+				</svg>
+				<img src="assets/images/globe-1.jpg" d>
+				<img src="assets/images/map-1.png">
+			</div>
+		</article>
+	</section>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
 </html>

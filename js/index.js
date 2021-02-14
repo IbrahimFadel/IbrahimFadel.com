@@ -84,9 +84,26 @@ section2Arrow.addEventListener('mouseleave', section2ArrowMouseLeave);
 
 const section3Panels = document.querySelectorAll('article.section-3-panel');
 
-for(const panel of section3Panels) {
-	new ScrollMagic.Scene({triggerElement: panel, triggerHook: 0.7})
-					.setClassToggle(panel, "visible") // add class toggle
-					// .addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
+for (const panel of section3Panels) {
+	new ScrollMagic.Scene({ triggerElement: panel, triggerHook: 0.7 })
+		.setClassToggle(panel, "visible") // add class toggle
+		// .addIndicators() // add indicators (requires plugin)
+		.addTo(controller);
 }
+
+const slideshowContainer = document.getElementById("section-6-alice-insights-slideshow");
+
+let slideIndex = 0;
+const slideIntervalTime = 5000;
+setInterval(() => {
+	console.log(slideIndex);
+	for (let i = 0; i < slideshowContainer.children.length; i++) {
+		slideshowContainer.children[i].classList.remove("slideShowActive");
+	}
+	slideshowContainer.children[slideIndex].classList.add("slideShowActive");
+
+	if (slideIndex == slideshowContainer.children.length - 1)
+		slideIndex = 0;
+	else
+		slideIndex++;
+}, slideIntervalTime);

@@ -108,14 +108,14 @@
 	padding-bottom: 100px;
 }
 
-#section-3-title {
+.section-3-title {
 	font-family: 'Merriweather', serif;
 	font-weight: 400;
 	font-size: 2em;
 	text-align: center;
 }
 
-#section-3-hr {
+.section-3-hr {
 	margin: auto;
 	margin-top: 15px;
 	width: 50%;
@@ -126,7 +126,7 @@
 	padding: 1px;
 }
 
-#section-3-subtitle {
+.section-3-subtitle {
 	text-align: center;
 	margin-top: 15px;
 }
@@ -237,4 +237,28 @@
 	width: 150px;
 	margin-top: 50px;
 	cursor: pointer;
+}
+
+#section-5 {
+	width: 100vw;
+	background-color: var(--lighter);
+
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#section-5-alice-insights-slideshow {
+	flex-direction: row;
+}
+
+#section-5-alice-insights-slideshow > * {
+	opacity: 0;
+	width: 0;
+	transition: opacity 2s ease;
+	height: 300px;
+}
+
+.slideShowActive {
+	opacity: 1 !important;
+	width: auto !important;
 }
