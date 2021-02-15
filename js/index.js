@@ -91,7 +91,7 @@ for (const panel of section3Panels) {
 		.addTo(controller);
 }
 
-const slideshowContainer = document.getElementById("section-6-alice-insights-slideshow");
+const slideshowContainer = document.getElementById("section-5-alice-insights-slideshow");
 
 let slideIndex = 0;
 const slideIntervalTime = 5000;
