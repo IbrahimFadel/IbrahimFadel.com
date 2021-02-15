@@ -96,14 +96,14 @@ const slideshowContainer = document.getElementById("section-5-alice-insights-sli
 let slideIndex = 0;
 const slideIntervalTime = 5000;
 setInterval(() => {
+	if (slideIndex == slideshowContainer.children.length - 1)
+		slideIndex = 0;
+	else
+		slideIndex++;
+
 	console.log(slideIndex);
 	for (let i = 0; i < slideshowContainer.children.length; i++) {
 		slideshowContainer.children[i].classList.remove("slideShowActive");
 	}
 	slideshowContainer.children[slideIndex].classList.add("slideShowActive");
-
-	if (slideIndex == slideshowContainer.children.length - 1)
-		slideIndex = 0;
-	else
-		slideIndex++;
 }, slideIntervalTime);
