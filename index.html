@@ -42,7 +42,8 @@
 		<h1>About Me</h1>
 
 		<p>I am a highschool student who loves to <span class="accent">make</span> things. I haven&apos;t figured out
-			which area I love the most yet, but so far I&apos;ve been dabbling in webdev, game design, compiler design
+			which area i&apos;m most interested in yet, but so far I&apos;ve been dabbling in webdev, game design,
+			compiler design
 			as well as just random projects :) Aside from coding, I love global politics and <span
 				class="accent">writing</span>.</p>
 
@@ -55,19 +56,40 @@
 		<hr class="section-3-hr">
 		<p class="section-3-subtitle">Here&apos;s what i&apos;ve done so far</p>
 
-		<article class="section-3-panel">
+		<div id="projects-container">
+			<div class="project">
+				<img src="assets/images/sandscript.png">
+			</div>
+			<div class="project">
+				<img src="assets/images/sandscript.png">
+			</div>
+			<div class="project">
+				<img src="assets/images/sandscript.png">
+			</div>
+			<div class="project">
+				<img src="assets/images/sandscript.png">
+			</div>
+			<div class="project">
+				<img src="assets/images/sandscript.png">
+			</div>
+			<div class="project">
+				<img src="assets/images/sandscript.png">
+			</div>
+		</div>
+
+		<!-- <article class="section-3-panel">
 			<div class="section-3-panel-left">
 				<h1>Sandscript</h1>
-				<p>This project started off as a way for me to learn C++. I was bored by all the examples online, so I
+				<p>This project started off as a way for me to learn C++. I was bored by all the example projects online, so I
 					decided I would try to make a programming language (because I heard people did those in C++).
-					Originally, it was just a simple interpreted language that looked sort of like Typescript. It wasn't
+					Originally, it was just a simple interpreted language that looked sort of like Typescript. It wasn&apos;t
 					very interesting, but it had variables, functions, and some basic control flow.</p>
 				<p>Eventually, I decided to take it a step forward and make it <span class="accent">compiled</span>. I
 					came across LLVM -- a super incredible project that can handle all the codegen. Using LLVM, I built
 					my first attempt at a compiler. I&apos;ve been rewriting and rewriting for a long time now trying to
 					land on a version i&apos;m happy with (still not there).</p>
 				<p>This whole project ended up leading me down the rabbit whole of lower level programming. In general,
-					i&apos;ve much more interested in the low level aspects of computers and compilers in general, and
+					i&apos;ve become much more interested in the low level aspects of computers and compilers in general, and
 					it&apos; been nice exploring those.</p>
 				<a target="__blank" href="https://github.com/IbrahimFadel/sandscript"><button>Github</button></a>
 			</div>
@@ -105,12 +127,12 @@
 				<p>SIRC (Simple IRC) is just a basic IRC client. I initially took inspiration from <a target="__blank"
 						href="https://github.com/dylanaraps/birch" class="accent">birch</a> -- I had never heard of IRC
 					and it intrigued me. I decided to take a crack at it and make a terminal based client.</p>
-				<p>I made it in Typescript because I&apos;d been meaning to start using it more and get more used to it.
+				<p>I made it in Typescript because I&apos;d been meaning to start using it more.
 					After figuring out how to establish a connection to an IRC server and how to send commands, I
 					basically just implemented some of the IRC protocol (not very much of it). Basically all you can do
 					is connect to a server, join & leave channels, and send messages. It&apos;s not very exciting, but
 					it works and I think it looks decent.</p>
-				<p>Looking through the codebase, I see remnants of times I tried making it into a TUI, and other parts
+				<p>If you check out the codebase, you might find remnants of times I tried making it into a TUI, and other parts
 					that I never ended up cleaning up. I definitely want to go back and refactor it a bunch when I get
 					the time.</p>
 				<a target="__blank" href="https://github.com/IbrahimFadel/sirc"><button>Github</button></a>
@@ -121,19 +143,45 @@
 				<caption>Example SIRC usage</caption>
 			</div>
 		</article>
+
+		<article class="section-3-panel">
+			<div class="section-3-panel-left">
+				<h1>Minecraft Clone</h1>
+				<p>I recently got interested in OpenGL and as a project to learn, I started building a minecraft clone. Right now it&apos;s essentially just a very simple voxel engine. There is infinite procedural terrain with stone, grass and water blocks. It&apos;s quite minimal right now, but I&apos;d like to continue developing it into something playable.</p>
+				<a target="__blank" href="https://github.com/IbrahimFadel/minecraft-clone"><button>Github</button></a>
+			</div>
+
+			<div class="section-3-panel-right">
+				<img src="assets/images/mc-clone.png" id="section-3-mc-clone-img">
+				<caption>Screenshot taken in game</caption>
+			</div>
+		</article>
+
+		<article class="section-3-panel">
+			<div class="section-3-panel-left">
+				<h1>Interactive Network Plot</h1>
+				<p>This is another recent project. It&apos;s essentially an interactive network made with Typescript and D3 that can help you take notes, or make graphs to help you visualize things. It&apos;s still in quite an early stage of development, but it&apos;s quite fun to use already.</p>
+				<a target="__blank" href="http://network.ibrahimfadel.com"><button>View Online</button></a>
+			</div>
+
+			<div class="section-3-panel-right">
+				<img src="assets/images/network.png" id="section-3-network-img">
+				<caption>Example network plot</caption>
+			</div>
+		</article> -->
 	</section>
 
 	<section id="section-4">
 		<h1>Some other Experience</h1>
 
 		<p>I, along with a few friends, run the Amnesty International club at my school. There, we learn and spread
-			awareness about humanitarian crises. We aim to write plenty of articles which we publish for students at our
+			awareness about humanitarian crises. We also write and publish articles for students at our
 			school.</p>
 
 		<p>I am also part of the executive team at <a class="accent" target="__blank"
 				href="https://worldaffairs.ucc.on.ca">WAC</a>, an annual student-led conference. I work on the tech team
-			where we hosted the conference online for the first time ever, and maintain the website and registration
-			system.</p>
+			where we&apos;ve been building the website and registation system. This year, we hosted the event online for
+			the first time ever, and we were able to get attendees from all over the globe.</p>
 
 		<a href="#section-5"><img src="assets/downArrow.svg" id="section-4-arrow"></a>
 	</section>
@@ -146,8 +194,8 @@
 			<div class="section-3-panel-left">
 				<h1>Alice Insights</h1>
 				<p>I work at <a target="__blank" href="https://aliceinsights.com/" class="accent">Alice Insights</a> as
-					an software development intern. My main job was modelling geo-spatial data on maps in both three and
-					two dimensions. I also worked on unit tests and general web development.</p>
+					an software development intern. I work on modelling geo-spatial data on maps in both three and
+					two dimensions. I also wrote unit tests and did general web development.</p>
 			</div>
 
 			<div class="section-3-panel-right" id="section-5-alice-insights-slideshow">

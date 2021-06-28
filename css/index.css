@@ -191,6 +191,14 @@
 	height: auto;
 }
 
+#section-3-mc-clone-img {
+	width: 80%;
+}
+
+#section-3-network-img {
+	width: 80%;
+}
+
 @media only screen and (max-width: 1000px) {
 	.section-3-panel {
 		flex-direction: column;
@@ -204,6 +212,31 @@
 		height: auto;
 		width: 50%;
 	}
+}
+
+#projects-container {
+	columns: 30ch 3;
+	/* gap: 10px; */
+}
+
+.project {
+	cursor: pointer;
+	transition: all 1s ease;
+	transform-style: preserve-3d;
+	box-shadow: 1px 1px 5px #00000080;
+}
+
+.project img {
+	max-width: 100%;
+}
+
+.project.active {
+	transform: rotateY(-180deg);
+	/* position: fixed;
+	top: 3em;
+	bottom: 3em;
+	left: 3em;
+	right: 3em; */
 }
 
 #section-4 {
