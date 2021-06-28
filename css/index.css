@@ -214,9 +214,8 @@
 	}
 }
 
-#projects-container {
+/* #projects-container {
 	columns: 30ch 3;
-	/* gap: 10px; */
 }
 
 .project {
@@ -232,12 +231,7 @@
 
 .project.active {
 	transform: rotateY(-180deg);
-	/* position: fixed;
-	top: 3em;
-	bottom: 3em;
-	left: 3em;
-	right: 3em; */
-}
+} */
 
 #section-4 {
 	width: 100vw;
