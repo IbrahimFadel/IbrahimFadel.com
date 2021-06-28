@@ -1,12 +1,17 @@
-name: deploy-to-gh-pages
-on: [push]
+name: Deploy
+on:
+  push:
+    branches:
+      - main
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: |
-          git checkout gh-pages
-          git merge master
-          git push origin gh-pages
-      - run: echo "🎉 This job's status is ${{ job.status }}."
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: .
