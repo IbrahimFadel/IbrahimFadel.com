@@ -1,11 +1,10 @@
-name: Deploy to gh-pages branch
+name: deploy-to-gh-pages
 on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Merge master with gh-pages
       - run: |
           git checkout gh-pages
           git merge master
