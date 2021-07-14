@@ -106,13 +106,3 @@ setInterval(() => {
 	}
 	slideshowContainer.children[slideIndex].classList.add("slideShowActive");
 }, slideIntervalTime);
-
-const projects = document.getElementsByClassName("project");
-for (const project of projects) {
-	project.onclick = () => projectClicked(project);
-}
-
-function projectClicked(project) {
-	console.log(project);
-	project.classList.add('active');
-}
